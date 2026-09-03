@@ -15,6 +15,7 @@
         <Bar id="idbar">
             <contentRight>
              <Button id="Button" text="Submit" type="Accept" press="onSubmit" ></Button>
+             <Button id="button1"></Button>
             </contentRight>
         </Bar>
     </footer>
