@@ -1,0 +1,140 @@
+<mvc:View controllerName="com.demo.gridlayout.gridlayout.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"  xmlns:l="sap.ui.layout" >
+    <Page id="page" title="{i18n>title}">    
+    <Panel id="idpanel" headerText="Order detais" expandable="true">
+    <l:Grid id="idgrid" defaultSpan="L6 M6" vSpacing="0">
+    <l:content>
+    <Label id="idid" text="id"></Label>
+    <Input id="inpid" ></Input>
+    <Label id="labelOrderno" text="Orderno"></Label>
+    <Input id="inpOrderno" ></Input>
+     <Label id="labelOrderType" text="OrderType"></Label>
+    <Input id="inpOrderType" ></Input>
+     <Label id="labelCustomer" text="Customer"></Label>
+    <Input id="inpCustomer" ></Input>
+     <Label id="labelGrossAmt" text="GrossAmt"></Label>
+    <Input id="inpGrossAmt" ></Input>
+     <Label id="labelCurrencyUnit" text="CurrencyUnit"></Label>
+    <Input id="inpCurrencyUnit" ></Input>
+    </l:content>
+    </l:Grid>
+    </Panel>
+
+ <Panel id="idpanel1" headerText="Order detais tipo 2" expandable="true">
+    <l:Grid id="idgrid1" defaultSpan="L3 M3" vSpacing="0">
+    <l:content>
+    <Label id="idid1" text="id" class="sapUiTiniMarginTop"></Label>
+    <Input id="inpid1" ></Input>
+    <Label id="labelOrderno1" text="Orderno" class="sapUiTiniMarginTop"></Label>
+    <Input id="inpOrderno1" ></Input>
+     <Label id="labelOrderType1" text="OrderType" class="sapUiTiniMarginTop"></Label>
+    <Input id="inpOrderType1" ></Input>
+     <Label id="labelCustomer1" text="Customer" class="sapUiTiniMarginTop"></Label>
+    <Input id="inpCustomer1" ></Input>
+     <Label id="labelGrossAmt1" text="GrossAmt" ></Label>
+    <Input id="inpGrossAmt1" ></Input>
+     <Label id="labelCurrencyUnit1" text="CurrencyUnit" ></Label>
+    <Input id="inpCurrencyUnit1" ></Input>
+    </l:content>
+    </l:Grid>
+    </Panel>
+
+ <Panel id="idpanel2" headerText="Order detais type tre" expandable="true">
+    <l:Grid id="idgrid2" defaultSpan="L2 M2" vSpacing="0">
+    <l:content>
+    <Label id="idid2" text="id" class="sapUiTiniMarginTop"></Label>
+    <Input id="inpid2" ></Input>
+    <Label id="labelOrderno2" text="Orderno" class="sapUiTiniMarginTop"></Label>
+    <Input id="inpOrderno2" ></Input>
+     <Label id="labelOrderType2" text="OrderType" class="sapUiTiniMarginTop"></Label>
+    <Input id="inpOrderType2" ></Input>
+     <Label id="labelCustomer2" text="Customer" class="sapUiTiniMarginTop"></Label>
+    <Input id="inpCustomer2" ></Input>
+     <Label id="labelGrossAmt2" text="GrossAmt" class="sapUiTiniMarginTop"></Label>
+    <Input id="inpGrossAmt2" ></Input>
+     <Label id="labelCurrencyUnit2" text="CurrencyUnit" class="sapUiTiniMarginTop"></Label>
+    <Input id="inpCurrencyUnit2" ></Input>
+    </l:content>
+    </l:Grid>
+    </Panel>
+
+
+
+     <Panel id="idpanel3" headerText="zigzag pattern " expandable="true">
+    <l:Grid id="idgrid3"  vSpacing="0">
+    <l:content>
+
+    <Label id="idid3" text="id" class="sapUiTiniMarginTop">
+    <layoutData>
+     <l:GridData id="idgriddata3" span="L3 M3"></l:GridData>
+    </layoutData>
+     </Label >
+    
+    <Input id="inpid3" >
+     <layoutData>
+     <l:GridData id="inpdataid3" span="L9 M9"></l:GridData>
+    </layoutData>
+    </Input>
+
+    <Label id="labelOrderno3" text="Orderno" class="sapUiTiniMarginTop">
+     <layoutData>
+     <l:GridData id="labeldataOrderno3" span="L3 M3"></l:GridData>
+    </layoutData>
+    </Label>
+
+    <Input id="inpOrderno3" >
+ <layoutData>
+     <l:GridData id="inpdataOrderno3" span="L3 M3"></l:GridData>
+    </layoutData>
+    </Input>
+
+     <Label id="labelOrderType3" text="OrderType" class="sapUiTiniMarginTop">
+       <layoutData>
+     <l:GridData id="labeldataOrderType3" span="L3 M3"></l:GridData>
+    </layoutData>
+     </Label>
+
+
+    <Input id="inpOrderType3" >
+    <layoutData>
+     <l:GridData id="inpdataOrderType3" span="L3 M3"></l:GridData>
+    </layoutData>
+    </Input>
+
+     <Label id="labelCustomer3" text="Customer" class="sapUiTiniMarginTop">
+      <layoutData>
+     <l:GridData id="labeldataCustomer3" span="L2 M2"></l:GridData>
+    </layoutData>
+     </Label>
+
+    <Input id="inpCustomer3" >
+    <layoutData>
+     <l:GridData id="inpdataCustomer3" span="L2 M2"></l:GridData>
+    </layoutData>
+    </Input>
+     <Label id="labelGrossAmt3" text="GrossAmt" class="sapUiTiniMarginTop">
+     <layoutData>
+     <l:GridData id="labeldataGrossAmt3" span="L2 M2"></l:GridData>
+    </layoutData>
+     </Label>
+    <Input id="inpGrossAmt3" >
+     <layoutData>
+     <l:GridData id="inpdataGrossAmt3" span="L2 M2"></l:GridData>
+    </layoutData>
+    </Input>
+     <Label id="labelCurrencyUnit3" text="CurrencyUnit" class="sapUiTiniMarginTop">
+      <layoutData>
+     <l:GridData id="labeldataCurrencyUnit3" span="L2 M2"></l:GridData>
+    </layoutData>
+     </Label>
+    <Input id="inpCurrencyUnit3" >
+     <layoutData>
+     <l:GridData id="inpdataCurrencyUnit3" span="L2 M2"></l:GridData>
+    </layoutData>
+    </Input>
+    </l:content>
+    </l:Grid>
+    </Panel>
+    </Page>
+</mvc:View>
