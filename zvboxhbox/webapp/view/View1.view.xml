@@ -1,6 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <mvc:View controllerName="com.demo.zvboxhbox.zvboxhbox.controller.View1"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m"
+          xmlns:l="sap.ui.layout">
+    <Page id="page"
+          title="{i18ntitle}">
+        <content>
+                
+            <FlexBox   justifyContent="Center" class="SapIiTinyMarginBegin"  
+            alignItems="Center" height="100%">
+                <Button id="bt5"
+                        text="go"
+                        type="Accept" />
+                <Button id="bt6"
+                        text="stop"
+                        type="Reject" />
+            </FlexBox>
+            <VBox>
+                <Button id="bt1"
+                        text="Button1" />
+                <Button id="bt2"
+                        text="Button2" />
+            </VBox>
+            <HBox>
+                <Button id="bt3"
+                        text="Button1" />
+                <Button id="bt4"
+                        text="Button2" />
+            </HBox>
+
+        </content>
+       
     </Page>
 </mvc:View>
