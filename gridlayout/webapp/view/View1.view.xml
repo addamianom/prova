@@ -17,6 +17,7 @@
     <Input id="inpGrossAmt" ></Input>
      <Label id="labelCurrencyUnit" text="CurrencyUnit"></Label>
     <Input id="inpCurrencyUnit" ></Input>
+   
     </l:content>
     </l:Grid>
     </Panel>
