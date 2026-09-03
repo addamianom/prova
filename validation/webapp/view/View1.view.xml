@@ -1,24 +1,21 @@
 <mvc:View controllerName="com.demo.validation.validation.controller.View1"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core"  >
+     xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"    xmlns:f="sap.ui.layout.form"  xmlns:core="sap.ui.core" >
     <Page id="page" title="{i18n>title}">
-
-   <content>
-    <f:SimpleForm id="simpleform"  title="Orders" editable="true" layout="ResponsiveGridLayout" 
-    labelSpanL="4" labelSpanM="4" emptySpanL="0" emptySpanM="0" columnsL="3" columnsM="2" >
+     <content>
+ <f:SimpleForm id="simpleform"  title="Orders" editable="true" layout="ResponsiveGridLayout" >
     <f:content>
-    <core:Title text="Employee Details"  id="idgrp1" ></core:Title>
-     <Label id="idid" text="enploye id"></Label>
-    <Input id="inpid" ></Input>
+   <core:Title text="Employee Details"  id="idgrp1" ></core:Title> 
+     <Label id="id1" text="enploye id" required="true" ></Label>
+    <Input id="empid"> </Input>
    </f:content>
     </f:SimpleForm>
     </content>
     <footer>
-        <Bar>
-            <ContentRight>
+        <Bar id="idbar">
+            <contentRight>
              <Button id="Button" text="Submit" type="Accept" press="onSubmit" ></Button>
-
-            </ContentRight>
+            </contentRight>
         </Bar>
     </footer>
     </Page>
