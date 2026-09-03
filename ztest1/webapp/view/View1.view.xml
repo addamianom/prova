@@ -2,5 +2,29 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
+        <content>
+            <ObjectHeader title="Michele" number="1000"
+            numberUnit="eur" backgroundDesign="Solid" >
+            <ObjectAttribute title="Employeid" text="1001" ></ObjectAttribute>
+            <ObjectAttribute title="Designation" text="Team Lead" ></ObjectAttribute>
+              <statuses>
+                <ObjectStatus text="Permanente" state="Error">
+
+                </ObjectStatus>
+              </statuses>
+            </ObjectHeader>
+           <IconTabBar>
+           <items>
+             <IconTabFilter icon="sap-icon://information"> 
+            <Text text="I am informatio tab" > </Text>
+            </IconTabFilter>
+             
+             <IconTabFilter  icon="sap-icon://notes">
+                 <Text text="I am notes tab" > </Text>
+             </IconTabFilter>
+             <IconTabFilter> </IconTabFilter>
+           </items>
+           </IconTabBar>
+        </content>
     </Page>
 </mvc:View>
