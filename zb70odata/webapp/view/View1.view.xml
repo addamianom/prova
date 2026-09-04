@@ -1,9 +1,53 @@
 <mvc:View controllerName="com.demo.zb70odata.controller.View1"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"    xmlns:f="sap.ui.layout.form"  xmlns:core="sap.ui.core" >
     <Page id="page" title="{i18n>title}">
+     <content>
+     <Table id="idtable" items="{oModel>/EmployeeSet}">
+       <headerToolbar>
+        <Toolbar id="idtoolbar">
+            <Title id="idtitle" text="Enployees list"></Title>
+        </Toolbar>
+       </headerToolbar>
+       <columns>
+        <Column id="idcolumn">
+            <Text id="idtext1" text="Employee id"></Text>
+            </Column>
+            <Column id="idcolumn1">
+             <Text id="idtext2" text="Employee name"></Text>
+             </Column>
+             <Column id="idcolumn2">
+              <Text id="idtext3" text="Employee phone"></Text>
+              </Column>
+              <Column id="idcolumn3">
+               <Text id="idtext4" text="Employee email"></Text>
+            </Column>
+       </columns>
+       <items>
+        <ColumnListItem id="columnlistitem">
+            <cells>
+                <Text id="text1" text="{oModel>Empid}"/>
+                 
+                
+                   <Text id="text2" text="{oModel>Name}"/>
+                
+                <Text id="text3" text="{oModel>Phone}"/>
+                        
+                <Text id="text4" text="{oModel>Email}"/>
+                        </cells>
+        </ColumnListItem>
+       </items>
 
-        
-        <content />
+     </Table>
+  
+    </content>
+    <footer>
+        <Bar id="idbar">
+            <contentRight>
+             <Button id="Button" text="Submit" type="Accept" press="onSubmit" ></Button>
+           <!--   <Button id="button1" text="Press" type="Accept" press="onpress"></Button> -->
+            </contentRight>
+        </Bar>
+    </footer>
     </Page>
 </mvc:View>

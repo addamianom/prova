@@ -63,7 +63,7 @@
           "bundleName": "com.demo.zb70odata.i18n.i18n"
         }
       },
-      "": {
+      "oModel": {
         "dataSource": "mainService",
         "preload": true,
         "settings": {}
