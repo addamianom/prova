@@ -12,7 +12,8 @@ sap.ui.define([
             if (empid === ""){
              this.getView().byId("empid").setValueState("Error");
               this.getView().byId("empid").setValueStateText("Employeid is mandatory please fill the field");
-            }     
+            } else {   
+               this.getView().byId("empid").setValueState("None"); 
         }
     });
 });
