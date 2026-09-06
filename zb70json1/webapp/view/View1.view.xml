@@ -3,7 +3,7 @@
     xmlns="sap.m"    xmlns:f="sap.ui.layout.form"  xmlns:core="sap.ui.core" >
     <Page id="page" title="{i18n>title}">
      <content>
-     <Table id="idtable" items="{oModel>/EmployeeSet}">
+     <Table id="idtable" items="{empModel>/results}" mode="MultiSelect" selectionChange="onSelectionChange" >
        <headerToolbar>
         <Toolbar id="idtoolbar">
             <Title id="idtitle" text="Employees list"></Title>
@@ -53,16 +53,16 @@
         <ColumnListItem id="columnlistitem">
 
             <cells>
-                <Text id="text1" text="{oModel>Empid}"/>
-                <Text id="text2" text="{oModel>Name}"/>
-                <Text id="text3" text="{oModel>Desig}"/> 
-                <Text id="text4" text="{oModel>Skill}"/>  
-                <Text id="text5" text="{oModel>Email}"/>
-                <Text id="text6" text="{oModel>Phone}"/>
-                 <Text id="text7" text="{oModel>Salary}"/>
-                <Text id="text8" text="{oModel>Doj}"/>
-                <Text id="text9" text="{oModel>Rating}"/>
-                <Text id="text10" text="{oModel>Status}"/>
+                <Text id="text1" text="{empModel>Empid}"/>
+                <Text id="text2" text="{empModel>Name}"/>
+                <Text id="text3" text="{empModel>Desig}"/> 
+                <Text id="text4" text="{empModel>Skill}"/>  
+                <Text id="text5" text="{empModel>Email}"/>
+                <Text id="text6" text="{empModel>Phone}"/>
+                 <Text id="text7" text="{empModel>Salary}"/>
+                <Text id="text8" text="{empModel>Doj}"/>
+                <Text id="text9" text="{empModel>Rating}"/>
+                <Text id="text10" text="{empModel>Status}"/>
             </cells>
         </ColumnListItem>
        </items>
