@@ -1,7 +1,7 @@
 {
   "_version": "1.17.0",
   "sap.app": {
-    "id": "com.demo.zb70json1",
+    "id": "com.demo.ztest2",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
       "version": "1.31.1",
-      "toolsId": "1cd94fee-417e-4704-a8fb-dd508e5d84cc"
+      "toolsId": "cfb64552-01e0-4185-8cae-43cad8ce1429"
     },
     "dataSources": {
       "mainService": {
@@ -60,24 +60,14 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "com.demo.zb70json1.i18n.i18n"
+          "bundleName": "com.demo.ztest2.i18n.i18n"
         }
       },
-    
       "": {
         "dataSource": "mainService",
-        "settings": {
-          "defaultBindingMode": "TwoWay",
-          "defaultCountMode": "Inline",
-          "useBatch": true
-        }
-
-      },
-
-      "empModel":{
-        "type": "sap.ui.model.json.JSONModel"
-       }
-
+        "preload": true,
+        "settings": {}
+      }
     },
     "resources": {
       "css": [
@@ -91,7 +81,7 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "com.demo.zb70json1.view",
+        "viewPath": "com.demo.ztest2.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
@@ -116,7 +106,7 @@
       }
     },
     "rootView": {
-      "viewName": "com.demo.zb70json1.view.App",
+      "viewName": "com.demo.ztest2.view.App",
       "type": "XML",
       "async": true,
       "id": "App"
