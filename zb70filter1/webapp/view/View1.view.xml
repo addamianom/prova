@@ -23,7 +23,7 @@
                     <!-- Filter Group Item for Skill Dropdown -->
                     <fb:FilterGroupItem name="Skill" label="Skill" groupName="Group1" visibleInFilterBar="true">
                         <fb:control>
-                            /SkillSet}" -->
+                           
                             <ComboBox id="idSkillFilter" placeholder="Select Skill">
                                 <core:Item key="ABAP" text="ABAP"/>
                                 <core:Item key="UI5" text="SAPUI5 / Fiori"/>
