@@ -10,7 +10,7 @@ sap.ui.define([
     function (UIComponent, Device, models) {
         "use strict";
 
-        return UIComponent.extend("com.demo.zb70jsonfield.Component", {
+        return UIComponent.extend("com.demo.zb70jsonfield.Component",{
             metadata: {
                 manifest: "json"
             },
@@ -29,6 +29,7 @@ sap.ui.define([
 
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
+                
                 // json model
                 var oModel = this.getModel(); // gives odata model
                 var empModel = this.getModel("empModel"); // gives json model 
