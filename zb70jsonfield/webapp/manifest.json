@@ -68,12 +68,10 @@
         "preload": true,
         "settings": {}
       },
-
       
       "empModel":{
         "type": "sap.ui.model.json.JSONModel"
        }
-
     },
     "resources": {
       "css": [
