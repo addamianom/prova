@@ -1,9 +1,11 @@
 <mvc:View controllerName="com.demo.zb70odata.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m"    xmlns:f="sap.ui.layout.form"  xmlns:core="sap.ui.core" >
+    xmlns="sap.m"  
+      xmlns:f="sap.ui.layout.form"  xmlns:core="sap.ui.core" >
     <Page id="page" title="{i18n>title}">
      <content>
-     <Table id="idtable" items="{oModel>/EmployeeSet}">
+     <Table id="idtable" items="{oModel>/EmployeeSet}"
+        
        <headerToolbar>
         <Toolbar id="idtoolbar">
             <Title id="idtitle" text="Employees list"></Title>
