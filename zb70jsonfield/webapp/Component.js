@@ -5,7 +5,7 @@
 sap.ui.define([
         "sap/ui/core/UIComponent",
         "sap/ui/Device",
-        "com/demo/zb70json1/model/models"
+        "com/demo/zb70jsonfield/model/models"
     ],
     function (UIComponent, Device, models) {
         "use strict";
