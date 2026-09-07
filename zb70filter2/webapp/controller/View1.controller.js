@@ -50,7 +50,7 @@ sap.ui.define([
             if (sProperty === "Status") {
                 oList.addItem(new StandardListItem({ title: "Active", key: "Active" }));
                 oList.addItem(new StandardListItem({ title: "Inactive", key: "Inactive" }));
-                oList.addItem(new StandardListItem({ title: "PERMANENT", key: "PERMANENT" }));
+                oList.addItem(new StandardListItem({ title: "PERMANENT", key: "Permanent" }));
             } else if (sProperty === "Skill") {
                 oList.addItem(new StandardListItem({ title: "ABAP", key: "ABAP" }));
                 oList.addItem(new StandardListItem({ title: "SAPUI5", key: "UI5" }));
