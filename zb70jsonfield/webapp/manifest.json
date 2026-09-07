@@ -56,7 +56,8 @@
       "compact": true,
       "cozy": true
     },
-    "models": {
+    "models": 
+    {
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
@@ -71,7 +72,7 @@
       
       "empModel":{
         "type": "sap.ui.model.json.JSONModel"
-       }
+      }
     },
     "resources": {
       "css": [
