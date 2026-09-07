@@ -13,9 +13,9 @@
                     <fb:FilterGroupItem name="Status" label="Status" groupName="Group1" visibleInFilterBar="true">
                         <fb:control>
                             <ComboBox id="idStatusFilter" placeholder="Select Status">
-                                <core:Item key="Active" text="Active"/>
-                                <core:Item key="Inactive" text="Inactive"/>
-                                <core:Item key="Pending" text="Pending"/>
+                                <core:Item key="ACTIVE" text="Active"/>
+                                <core:Item key="INACTIVE" text="Inactive"/>
+                                <core:Item key="PERMANENT" text="PERMANENT"/>
                             </ComboBox>
                         </fb:control>
                     </fb:FilterGroupItem>
@@ -34,8 +34,6 @@
 
                 </fb:filterGroupItems>
             </fb:FilterBar>
-
-
 
 
      <Table id="idtable" items="{oModel>/EmployeeSet}">
