@@ -64,14 +64,10 @@
         }
       },
     
-      "": {
+       "": {
         "dataSource": "mainService",
-        "settings": {
-          "defaultBindingMode": "TwoWay",
-          "defaultCountMode": "Inline",
-          "useBatch": true
-        }
-
+        "preload": true,
+        "settings": {}
       },
 
       "empModel":{
