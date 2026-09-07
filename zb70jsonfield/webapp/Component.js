@@ -21,6 +21,7 @@ sap.ui.define([
              * @override
              */
             init: function () {
+                
                 // call the base component's init function
                 UIComponent.prototype.init.apply(this, arguments);
 
@@ -33,19 +34,18 @@ sap.ui.define([
 
 
    // json model
-                var Omodel = this.getModel(); // gives odata model
-                var empMolel = this.getModel("empModel"); // gives json model 
-                oModel.read("/EmployeeSet", {
+                var oModel = this.getModel(); // gives odata model
+                var empModel = this.getModel("empModel"); // gives json model 
+                oModel.read("/EmployeeSet"), {
                     success: function(data) {
-                        empMolel.setData(data);
+                        empModel.setData(data);
                         },
                     error:function(error) {
-                       // console.log(error);
-                    }
+                        console.log(error);
+                   }
                 });
-            
-
             }
+    
         });
     }
 );
