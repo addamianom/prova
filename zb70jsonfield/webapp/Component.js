@@ -1,12 +1,9 @@
-/**
- * eslint-disable @sap/ui5-jsdocs/no-jsdoc
- */
 
 sap.ui.define([
-        "sap/ui/core/UIComponent",
-        "sap/ui/Device",
-        "com/demo/zb70jsonfield/model/models"
-    ],
+    "sap/ui/core/UIComponent",
+    "sap/ui/Device",
+    "com/demo/zb70jsonfield/model/models"
+],
     function (UIComponent, Device, models) {
         "use strict";
 
@@ -15,13 +12,8 @@ sap.ui.define([
                 manifest: "json"
             },
 
-            /**
-             * The component is initialized by UI5 automatically during the startup of the app and calls the init method once.
-             * @public
-             * @override
-             */
             init: function () {
-                
+
                 // call the base component's init function
                 UIComponent.prototype.init.apply(this, arguments);
 
@@ -33,19 +25,19 @@ sap.ui.define([
 
 
 
-   // json model
+                // json model
                 var oModel = this.getModel(); // gives odata model
                 var empModel = this.getModel("empModel"); // gives json model 
                 oModel.read("/EmployeeSet"), {
-                    success: function(data) {
+                    success: function (data) {
                         empModel.setData(data);
-                        },
-                    error:function(error) {
+                    },
+                    error: function (error) {
                         console.log(error);
-                   }
-                });
+                    }
+                }
             }
-    
+
         });
     }
 );
