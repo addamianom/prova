@@ -7,6 +7,9 @@
        <headerToolbar>
         <Toolbar id="idtoolbar">
             <Title id="idtitle" text="Employees list"></Title>
+             <ToolbarSpacer />
+            <!-- Added SearchField for filtering -->
+            <SearchField id="idSearchField" width="30%" search=".onFilterEmployees" placeholder="Search by name..."/>
         </Toolbar>
        </headerToolbar>
        <columns>
