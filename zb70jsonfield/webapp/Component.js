@@ -29,6 +29,22 @@ sap.ui.define([
 
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
+
+
+
+   // json model
+                var Omodel = this.getModel(); // gives odata model
+                var empMolel = this.getModel("empModel"); // gives json model 
+                oModel.read("/EmployeeSet", {
+                    success: function(data) {
+                        empMolel.setData(data);
+                        },
+                    error:function(error) {
+                       // console.log(error);
+                    }
+                });
+            
+
             }
         });
     }

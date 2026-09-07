@@ -1,7 +1,83 @@
 <mvc:View controllerName="com.demo.zb70jsonfield.controller.View1"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"    xmlns:f="sap.ui.layout.form"  xmlns:core="sap.ui.core" >
     <Page id="page" title="{i18n>title}">
-        <content />
+     <content>
+     <Table id="idtable" items="{empModel>/results}" 
+        mode="MultiSelect" 
+        selectionChange="onSelectionChange" >
+       <headerToolbar>
+        <Toolbar id="idtoolbar">
+            <Title id="idtitle" text="Employees list"></Title>
+        </Toolbar>
+       </headerToolbar>
+       <columns>
+            <Column id="idcolumn">
+            <Text id="idtext1" text="Employee id"></Text>
+            </Column>
+
+            <Column id="idcolumn1">
+             <Text id="idtext2" text="Employee name"></Text>
+             </Column>
+
+            <Column id="idcolumn3">
+             <Text id="idtext3" text="Designation"></Text>
+             </Column>
+
+             <Column id="idcolumn4">
+              <Text id="idtext4" text="Skill"></Text>
+             </Column>
+            <Column id="idcolumn5">
+               <Text id="idtext5" text="Email"></Text>
+            </Column>
+
+             <Column id="idcolumn6">
+              <Text id="idtext6" text="Phone"></Text>
+              </Column>
+
+               <Column id="idcolumn7">
+              <Text id="idtext7" text="Salary"></Text>
+              </Column>
+           
+            <Column id="idcolumn9">
+              <Text id="idtext9" text="DOBJ"></Text>
+              </Column>
+
+             <Column id="idcolumn10">
+              <Text id="idtext10" text="Rating"></Text>
+              </Column>
+             <Column id="idcolumn11">
+              <Text id="idtext11" text="Status"></Text>
+              </Column>
+
+       </columns>
+       <items>
+        <ColumnListItem id="columnlistitem">
+
+            <cells>
+                <Text id="text1" text="{empModel>Empid}"/>
+                <Text id="text2" text="{empModel>Name}"/>
+                <Text id="text3" text="{empModel>Desig}"/> 
+                <Text id="text4" text="{empModel>Skill}"/>  
+                <Text id="text5" text="{empModel>Email}"/>
+                <Text id="text6" text="{empModel>Phone}"/>
+                 <Text id="text7" text="{empModel>Salary}"/>
+                <Text id="text8" text="{empModel>Doj}"/>
+                <Text id="text9" text="{empModel>Rating}"/>
+                <Text id="text10" text="{empModel>Status}"/>
+            </cells>
+        </ColumnListItem>
+       </items>
+
+     </Table>
+    </content>
+    <footer>
+        <Bar id="idbar">
+            <contentRight>   
+          <Button id="Button" text="Submit" type="Accept" press="onSubmit" ></Button>
+           <!--   <Button id="button1" text="Press" type="Accept" press="onpress"></Button> -->
+            </contentRight>
+        </Bar>
+    </footer>
     </Page>
 </mvc:View>
