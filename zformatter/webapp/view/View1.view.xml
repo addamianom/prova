@@ -63,9 +63,13 @@
                 <Text id="text5" text="{oModel>Email}"/>
                 <Text id="text6" text="{oModel>Phone}"/>
                  <Text id="text7" text="{oModel>Salary}"/>
-                <Text id="text8" text="{oModel>Doj}"/>
+                <Text id="text8" text="{path:'oModel>Doj', formatter:'.f.DateFormat'}"/>
+                  <!--  <Text id="text8" text="{oModel>Doj}"/> -->
                 <Text id="text9" text="{oModel>Rating}"/>
-                <Text id="text10" text="{oModel>Status}"/>
+
+ <ObjectStatus id="objectstatus1"
+  text="{oModel>Status}" state="{path:'oModel>Status',formatter:'.f.colorStatus'}"> </ObjectStatus>
+               <!-- <Text id="text10" text="{oModel>Status}"/> -->
             </cells>
         </ColumnListItem>
        </items>

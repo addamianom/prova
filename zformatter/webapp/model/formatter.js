@@ -12,7 +12,22 @@ sap.ui.define(function () {
             } else {
                 return "Error";
             }
-        }
+        },
+
+      colorStatus: function (Status) {
+            if (Status === "PERMANENT") {
+                return "Success";
+            } else  {
+                return "Error";
+            }
+          },
+
+          DateFormat: function (Doj) {
+            var oDateFormat = sap.ui.core.format.DateFormat.getDateTimeInstance({
+                pattern: "dd-MM-yyyy"}, sap.ui.getCore().getConfiguration().getLocale());
+            return oDateFormat.format(new Date(Doj));
+          }
+
 
       };
     });
