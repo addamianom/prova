@@ -36,10 +36,14 @@ sap.ui.define([
                 var empModel = this.getModel("empModel"); // gives json model 
                 oModel.read("/EmployeeSet", {
                     success: function(data) {
-                        empModel.setData(data);
+                     for (var i = 0; i < data.results.length; i++) {
+                        data.results[i].sno = i + 1; // Add serial number property
+                        data.results[i].name = "Mr. " + data.results[i].Name; // Add name property
+                        }
+                           empModel.setData(data);
                         },
                     error:function(error) {
-                       // console.log(error);
+                        console.log(error);
                     }
                 });
 

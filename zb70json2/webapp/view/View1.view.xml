@@ -3,6 +3,7 @@
     xmlns="sap.m"    xmlns:f="sap.ui.layout.form"  xmlns:core="sap.ui.core" >
     <Page id="page" title="{i18n>title}">
      <content>
+        <ScrollContainer id="scroll" vertical="true" horizontal="true">
      <Table id="idtable" items="{empModel>/results}" 
         mode="MultiSelect" 
         selectionChange="onSelectionChange" >
@@ -12,41 +13,43 @@
         </Toolbar>
        </headerToolbar>
        <columns>
-            <Column id="idcolumn">
-            <Text id="idtext1" text="Employee id"></Text>
+             <Column id="idcolumna" width="10rem">
+            <Text id="idtexta" text="Serial"></Text>
+            </Column>
+            <Column id="idcolumn" width="10rem">
+            <Text id="idtext1" text="Employee id" width="10rem"></Text>
             </Column>
 
-            <Column id="idcolumn1">
-             <Text id="idtext2" text="Employee name"></Text>
+            <Column id="idcolumn1" width="10rem">
+             <Text id="idtext2" text="Employee name" ></Text>
              </Column>
-
-            <Column id="idcolumn3">
+            <Column id="idcolumn3" width="10rem">  
              <Text id="idtext3" text="Designation"></Text>
              </Column>
 
-             <Column id="idcolumn4">
-              <Text id="idtext4" text="Skill"></Text>
+             <Column id="idcolumn4" width="10rem">
+              <Text id="idtext4" text="Skill" ></Text>
              </Column>
-            <Column id="idcolumn5">
+            <Column id="idcolumn5" width="10rem">
                <Text id="idtext5" text="Email"></Text>
             </Column>
 
-             <Column id="idcolumn6">
+             <Column id="idcolumn6" width="10rem">
               <Text id="idtext6" text="Phone"></Text>
               </Column>
 
-               <Column id="idcolumn7">
+               <Column id="idcolumn7" width="10rem">
               <Text id="idtext7" text="Salary"></Text>
               </Column>
            
-            <Column id="idcolumn9">
+            <Column id="idcolumn9" width="10rem">
               <Text id="idtext9" text="DOBJ"></Text>
               </Column>
 
-             <Column id="idcolumn10">
+             <Column id="idcolumn10" width="10rem">
               <Text id="idtext10" text="Rating"></Text>
               </Column>
-             <Column id="idcolumn11">
+             <Column id="idcolumn11" width="10rem">
               <Text id="idtext11" text="Status"></Text>
               </Column>
 
@@ -55,6 +58,7 @@
         <ColumnListItem id="columnlistitem">
 
             <cells>
+                <Text id="text" text="{empModel>sno}"/>
                 <Text id="text1" text="{empModel>Empid}"/>
                 <Text id="text2" text="{empModel>Name}"/>
                 <Text id="text3" text="{empModel>Desig}"/> 
@@ -70,6 +74,7 @@
        </items>
 
      </Table>
+     </ScrollContainer>
     </content>
     <footer>
         <Bar id="idbar">
