@@ -19,14 +19,14 @@
              <Text id="idtext2" text="Employee name"></Text>
              </Column>
 
-            <Column id="idcolumn3" width="15rem">
+            <Column id="idcolumn3" width="10rem">
              <Text id="idtext3" text="Designation"></Text>
              </Column>
 
              <Column id="idcolumn4" width="15rem">
               <Text id="idtext4" text="Skill"></Text>
              </Column>
-            <Column id="idcolumn5">
+            <Column id="idcolumn5" width="15rem">
                <Text id="idtext5" text="Email"></Text>
             </Column>
 
@@ -34,18 +34,18 @@
               <Text id="idtext6" text="Phone"></Text>
               </Column>
 
-               <Column id="idcolumn7">
+               <Column id="idcolumn7" width="10rem">
               <Text id="idtext7" text="Salary"></Text>
               </Column>
            
-            <Column id="idcolumn9">
+            <Column id="idcolumn9" width="10rem">
               <Text id="idtext9" text="DOBJ" width="10rem"></Text>
               </Column>
 
-             <Column id="idcolumn10">
+             <Column id="idcolumn10" width="10rem">
               <Text id="idtext10" text="Rating" width="10rem"></Text>
               </Column>
-             <Column id="idcolumn11">
+             <Column id="idcolumn11" width="10rem">
               <Text id="idtext11" text="Status" width="10rem"></Text>
               </Column>
 
@@ -55,9 +55,11 @@
 
             <cells>
                 <Text id="text1" text="{oModel>Empid}"/>
-                <Text id="text2" text="{oModel>Name}"/>
+                <Text id="text2" text="{path:'oModel>Name', formatter:'.f.formatName'}"/>
                 <Text id="text3" text="{oModel>Desig}"/> 
-                <Text id="text4" text="{oModel>Skill}"/>  
+  <ObjectStatus id="objectstatus"
+         text="{oModel>Skill}" state="{path:'Skill',formatter:'.f.colorSkill'}"> </ObjectStatus>
+           <!--    <text id="text4" text="{oModel></text>Skill}"/> -->
                 <Text id="text5" text="{oModel>Email}"/>
                 <Text id="text6" text="{oModel>Phone}"/>
                  <Text id="text7" text="{oModel>Salary}"/>
