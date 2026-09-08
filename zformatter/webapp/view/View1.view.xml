@@ -58,7 +58,7 @@
                 <Text id="text2" text="{path:'oModel>Name', formatter:'.f.formatName'}"/>
                 <Text id="text3" text="{oModel>Desig}"/> 
   <ObjectStatus id="objectstatus"
-         text="{oModel>Skill}" state="{path:'Skill',formatter:'.f.colorSkill'}"> </ObjectStatus>
+         text="{oModel>Skill}" state="{path:'oModel>Skill',formatter:'.f.colorSkill'}"> </ObjectStatus>
            <!--    <text id="text4" text="{oModel></text>Skill}"/> -->
                 <Text id="text5" text="{oModel>Email}"/>
                 <Text id="text6" text="{oModel>Phone}"/>
