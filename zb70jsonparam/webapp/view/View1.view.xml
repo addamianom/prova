@@ -1,14 +1,11 @@
 <mvc:View controllerName="zb70jsonparam.controller.View1"
-      xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m" 
-     xmlns:form="sap.ui.layout.form" 
-    xmlns:core="sap.ui.core">
-
-    <Page id="page" title="{i18n>title}">
-     <content>
-  <form:SimpleForm id="simpleform"  title="Orders" editable="true" layout="ResponsiveGridLayout" 
+     xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"    xmlns:f="sap.ui.layout.form"  xmlns:core="sap.ui.core"   >
+    <Page id="page" title="I am View1">
+    <content>
+    <f:SimpleForm id="simpleform"  title="Orders" editable="true" layout="ResponsiveGridLayout" 
     labelSpanL="4" labelSpanM="4" emptySpanL="0" emptySpanM="0" columnsL="3" columnsM="2" >
-    <form:content>
+    <f:content>
     <core:Title text="Order Details"  id="idgrp1" ></core:Title>
      <Label id="idid" text="id"></Label>
     <Input id="inpid" ></Input>
@@ -24,10 +21,10 @@
       <core:Title text="Currency Details"  id="idgrp3" ></core:Title>
      <Label id="labelCurrencyUnit" text="CurrencyUnit"></Label>
     <Input id="inpCurrencyUnit" ></Input>
-    </form:content>
-  </form:SimpleForm>
+    </f:content>
+    </f:SimpleForm>
     </content>
-    <footer>
+      <footer>
         <Bar id="idbar">
             <contentRight>
              <Button id="Button" text="Submit" type="Accept" press="onSubmit" ></Button>

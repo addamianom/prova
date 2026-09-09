@@ -30,25 +30,20 @@ sap.ui.define([
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
 
-                // enable routing
-                this.getRouter().initialize();
-
-
-                // json model
+    /*
+              // json model
                 var oModel = this.getModel(); // gives odata model
                 var empModel = this.getModel("empModel"); // gives json model 
-                oModel.read("/EmployeeSet", {
+              
+            oModel.read("/EmployeeSet", {
                     success: function(data) {
-                     for (var i = 0; i < data.results.length; i++) {
-                        data.results[i].sno = i + 1; // Add serial number property
-                        data.results[i].name = "Mr. " + data.results[i].Name; // Add name property
-                        }
-                           empModel.setData(data);
+                        empModel.setData(data);
                         },
                     error:function(error) {
                         console.log(error);
                     }
-                });
+                }); */
+
 
             }
 
