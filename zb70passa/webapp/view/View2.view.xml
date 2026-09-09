@@ -1,0 +1,30 @@
+<mvc:View controllerName="com.demo.zb70passa.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.ui.layout.form" 
+    xmlns="sap.m"
+     displayBlock="true">
+    <Page id="page2" title="{i18n>title}">
+    <f:SimpleForm id="simpleform1"  title="Orders" editable="true" layout="ResponsiveGridLayout" 
+    labelSpanL="4" labelSpanM="4" emptySpanL="0" emptySpanM="0" columnsL="3" columnsM="2" >
+    <f:content>
+    <core:Title text="Order Details"  id="idgrp11" ></core:Title>
+     <Label id="idid1" text="id"></Label>
+    <Input id="inpid1" ></Input>
+    <Label id="labelOrderno1" text="Orderno"></Label>
+    <Input id="inpOrderno1" ></Input>
+     <Label id="labelOrderType1" text="OrderType"></Label>
+    <Input id="inpOrderType1" ></Input>
+    <core:Title text="Other Details"  id="idgrp21" ></core:Title>
+     <Label id="labelCustomer1" text="Customer"></Label>
+    <Input id="inpCustomer1" ></Input>
+     <Label id="labelGrossAmt1" text="GrossAmt"></Label>
+    <Input id="inpGrossAmt1" ></Input>
+      <core:Title text="Currency Details"  id="idgrp31" ></core:Title>
+     <Label id="labelCurrencyUnit1" text="CurrencyUnit"></Label>
+    <Input id="inpCurrencyUnit1" ></Input>
+    </f:content>
+    </f:SimpleForm>
+
+        <content />
+    </Page>
+</mvc:View>
