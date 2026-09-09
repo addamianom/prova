@@ -1,10 +1,10 @@
 <mvc:View controllerName="com.demo.zb70fragment.controller.View1"
       xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m"    xmlns:form="sap.ui.layout.form"  xmlns:core="sap.ui.core" >
+    xmlns="sap.m"    xmlns:f="sap.ui.layout.form"  xmlns:core="sap.ui.core" >
     <Page id="page" title="{i18n>title}">
      <content>
         <ScrollContainer id="scroll" horizontal="true" vertical="true">
-     <Table id="idtable" items="{oModel>/EmployeeSet}" mode="SingleSelectMaster" selectionChange="onSelEmp">
+     <Table id="idtable" items="{empModel>/EmployeeSet}" mode="SingleSelectMaster" selectionChange="onSelEmp">
        <headerToolbar>
         <Toolbar id="idtoolbar">
             <Title id="idtitle" text="Employees list"></Title>
@@ -18,7 +18,6 @@
             <Column id="idcolumn" width="15rem">
             <Text id="idtext1" text="Employee id"></Text>
             </Column>
-
             <Column id="idcolumn1" width="15rem">
              <Text id="idtext2" text="Employee name"></Text>
              </Column>
@@ -58,24 +57,25 @@
         <ColumnListItem id="columnlistitem">
 
             <cells>
-                <Text id="text1" text="{oModel>Empid}"/>
-                <Text id="text2" text="{path:'oModel>Name', formatter:'.f.formatName'}"/>
-                <Text id="text3" text="{oModel>Desig}"/> 
+                <Text id="text1" text="{empModel>Empid}"/>
+                <Text id="text2" text="{path:'empModel>Name', formatter:'.f.formatName'}"/>
+                <Text id="text3" text="{empModel>Desig}"/> 
   <ObjectStatus id="objectstatus"
-         text="{oModel>Skill}" state="{path:'oModel>Skill',formatter:'.f.colorSkill'}"> </ObjectStatus>
-           <!--    <text id="text4" text="{oModel></text>Skill}"/> -->
-                <Text id="text5" text="{oModel>Email}"/>
-                <Text id="text6" text="{oModel>Phone}"/>
-                 <Text id="text7" text="{oModel>Salary}"/>
-                <Text id="text8" text="{path:'oModel>Doj', formatter:'.f.DateFormat'}"/>
+         text="{empModel>Skill}" state="{path:'empModel>Skill',formatter:'.f.colorSkill'}"> </ObjectStatus>
+           <!--    <text id="text4" text="{empModel></text>Skill}"/> -->
+                <Text id="text5" text="{empModel>Email}"/>
+                <Text id="text6" text="{empModel>Phone}"/>
+                 <Text id="text7" text="{empModel>Salary}"/>
+                <Text id="text8" text="{path:'empModel>Doj', formatter:'.f.DateFormat'}"/>
                   <!--  <Text id="text8" text="{oModel>Doj}"/> -->
-                <Text id="text9" text="{oModel>Rating}"/>
+                <Text id="text9" text="{empModel>Rating}"/>
 
  <ObjectStatus id="objectstatus1"
-  text="{oModel>Status}" state="{path:'oModel>Status',formatter:'.f.colorStatus'}"> </ObjectStatus>
+  text="{empModel>Status}" state="{path:'empModel>Status',formatter:'.f.colorStatus'}"> </ObjectStatus>
                <!-- <Text id="text10" text="{oModel>Status}"/> -->
             </cells>
         </ColumnListItem>
+
        </items>
 
      </Table>

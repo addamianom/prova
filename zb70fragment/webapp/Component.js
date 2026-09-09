@@ -3,10 +3,10 @@
  */
 
 sap.ui.define([
-        "sap/ui/core/UIComponent",
-        "sap/ui/Device",
-        "com/demo/zb70fragment/model/models"
-    ],
+    "sap/ui/core/UIComponent",
+    "sap/ui/Device",
+    "com/demo/zb70fragment/model/models"
+],
     function (UIComponent, Device, models) {
         "use strict";
 
@@ -30,8 +30,21 @@ sap.ui.define([
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
 
-                 // enable routing
+                // enable routing
                 this.getRouter().initialize();
+
+                // json model
+                var oModel = this.getModel(); // gives odata model
+                var empModel = this.getModel("empModel"); // gives json model 
+              
+                oModel.read("/EmployeeSet", {
+                    success: function(data) {
+                        empModel.setData(data);
+                        },
+                    error:function(error) {
+                        console.log(error);
+                    }
+                });
 
             }
         });

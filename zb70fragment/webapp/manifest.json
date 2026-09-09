@@ -63,11 +63,16 @@
           "bundleName": "com.demo.zb70fragment.i18n.i18n"
         }
       },
-      "oModel": {
+      
+      "":{
         "dataSource": "mainService",
         "preload": true,
         "settings": {}
-      }
+      },
+
+       "empModel":{
+        "type": "sap.ui.model.json.JSONModel"
+       }
     },
     "resources": {
       "css": [
