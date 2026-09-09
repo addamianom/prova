@@ -125,7 +125,6 @@
         }
       }
     },
-
     "rootView": {
       "viewName": "zb70jsonparam.view.App",
       "type": "XML",

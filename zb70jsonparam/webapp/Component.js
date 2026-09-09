@@ -30,7 +30,10 @@ sap.ui.define([
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
 
- 
+                // enable routing
+                this.getRouter().initialize();
+
+
                 // json model
                 var oModel = this.getModel(); // gives odata model
                 var empModel = this.getModel("empModel"); // gives json model 
