@@ -9,22 +9,21 @@
     <f:content>
     <core:Title text="Order Details"  id="idgrp11" ></core:Title>
      <Label id="idid1" text="id"></Label>
-    <Input id="inpid1" ></Input>
+    <Text id="inpid1" ></Text>
     <Label id="labelOrderno1" text="Orderno"></Label>
-    <Input id="inpOrderno1" ></Input>
+    <Text id="inpOrderno1" ></Text>
      <Label id="labelOrderType1" text="OrderType"></Label>
-    <Input id="inpOrderType1" ></Input>
+    <Text id="inpOrderType1" ></Text>
     <core:Title text="Other Details"  id="idgrp21" ></core:Title>
      <Label id="labelCustomer1" text="Customer"></Label>
-    <Input id="inpCustomer1" ></Input>
+    <Text id="inpCustomer1" ></Text>
      <Label id="labelGrossAmt1" text="GrossAmt"></Label>
-    <Input id="inpGrossAmt1" ></Input>
+    <Text id="inpGrossAmt1" ></Text>
       <core:Title text="Currency Details"  id="idgrp31" ></core:Title>
      <Label id="labelCurrencyUnit1" text="CurrencyUnit"></Label>
-    <Input id="inpCurrencyUnit1" ></Input>
+    <Text id="inpCurrencyUnit1" ></Text>
     </f:content>
     </f:SimpleForm>
-
         <content />
     </Page>
 </mvc:View>
