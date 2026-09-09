@@ -4,39 +4,6 @@
     <Page id="page" title="{i18n>title}">
 
      <content>
-<VBox id="vbox" class="sapUiSmallMargin">
-
-
-
-  <f:SimpleForm id="simpleform"  title="Orders" editable="true" layout="ResponsiveGridLayout" 
-    labelSpanL="4" labelSpanM="4" emptySpanL="0" emptySpanM="0" columnsL="3" columnsM="2" >
-    <f:content>
-    <core:Title text="Order Details"  id="idgrp1" ></core:Title>
-     <Label id="idid" text="id"></Label>
-    <Input id="inpid" ></Input>
-    <Label id="labelOrderno" text="Orderno"></Label>
-    <Input id="inpOrderno" ></Input>
-     <Label id="labelOrderType" text="OrderType"></Label>
-    <Input id="inpOrderType" ></Input>
-    <core:Title text="Other Details"  id="idgrp2" ></core:Title>
-     <Label id="labelCustomer" text="Customer"></Label>
-    <Input id="inpCustomer" ></Input>
-     <Label id="labelGrossAmt" text="GrossAmt"></Label>
-    <Input id="inpGrossAmt" ></Input>
-      <core:Title text="Currency Details"  id="idgrp3" ></core:Title>
-     <Label id="labelCurrencyUnit" text="CurrencyUnit"></Label>
-    <Input id="inpCurrencyUnit" ></Input>
-    </f:content>
-    </f:SimpleForm>
-
-
-
-
- 
-
-
-
-
  <ScrollContainer id="scroll" horizontal="true" vertical="true">
        
      <Table id="idtable" items="{empModel>/results}" mode="SingleSelectMaster" selectionChange="onSelEmp">
@@ -115,7 +82,6 @@
 
      </Table>
      </ScrollContainer>
-     </VBox>
     </content>
     <footer>
         <Bar id="idbar">
