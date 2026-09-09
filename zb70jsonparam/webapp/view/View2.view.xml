@@ -5,72 +5,14 @@
     xmlns:l="sap.ui.layout"
     xmlns:f="sap.ui.layout.form"
 >
-    <Page
-        id="page2"
+    <Page id="page2"
         title="{i18n>title2}"
         showNavButton="true"
-        navButtonPress="onPressback"
-    >
+        navButtonPress="onPressback" >
         <content>
-            <Panel id="panel1">
-                <f:SimpleForm
-                    id="simpleform1"
-                    title="Orders"
-                    editable="true"
-                    layout="ResponsiveGridLayout"
-                    labelSpanL="4"
-                    labelSpanM="4"
-                    emptySpanL="0"
-                    emptySpanM="0"
-                    columnsL="3"
-                    columnsM="2"
-                >
-                    <f:content>
-                        <core:Title
-                            text="Order Details"
-                            id="idgrp11"
-                        />
-                        <Label
-                            id="idid1"
-                            text="id"
-                        />
-                        <Input id="inpid1" />
-                        <Label
-                            id="labelOrderno1"
-                            text="Orderno"
-                        />
-                        <Input id="inpOrderno1" />
-                        <Label
-                            id="labelOrderType1"
-                            text="OrderType"
-                        />
-                        <Input id="inpOrderType1" />
-                        <core:Title
-                            text="Other Details"
-                            id="idgrp21"
-                        />
-                        <Label
-                            id="labelCustome1r"
-                            text="Customer"
-                        />
-                        <Input id="inpCustomer1" />
-                        <Label
-                            id="labelGrossAmt1"
-                            text="GrossAmt"
-                        />
-                        <Input id="inpGrossAmt1" />
-                        <core:Title
-                            text="Currency Details"
-                            id="idgrp31"
-                        />
-                        <Label
-                            id="labelCurrencyUnit1"
-                            text="CurrencyUnit"
-                        />
-                        <Input id="inpCurrencyUnit1" />
-                    </f:content>
-                </f:SimpleForm>
-            </Panel>
+        
+          <Label id="label" text="View2"></Label>
+            
         </content>
     </Page>
 </mvc:View>
