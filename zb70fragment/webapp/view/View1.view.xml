@@ -1,10 +1,10 @@
 <mvc:View controllerName="com.demo.zb70fragment.controller.View1"
       xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m"    xmlns:f="sap.ui.layout.form"  xmlns:core="sap.ui.core" >
+    xmlns="sap.m"   xmlns:form="sap.ui.layout.form"  xmlns:core="sap.ui.core" >
     <Page id="page" title="{i18n>title}">
      <content>
         <ScrollContainer id="scroll" horizontal="true" vertical="true">
-     <Table id="idtable" items="{empModel>/EmployeeSet}" mode="SingleSelectMaster" selectionChange="onSelEmp">
+     <Table id="idtable" items="{empModel>/results}" mode="SingleSelectMaster" selectionChange="onSelEmp">
        <headerToolbar>
         <Toolbar id="idtoolbar">
             <Title id="idtitle" text="Employees list"></Title>

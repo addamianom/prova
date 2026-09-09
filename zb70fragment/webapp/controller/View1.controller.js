@@ -21,11 +21,12 @@ sap.ui.define([
         },
         onSearch: function (oEvent) {
             // Handle search event
-             var value = oEvent.getParameter("NewValue");
+             var value = oEvent.getParameter("newValue");
             var afilter = [];
             if (value !== "") {
-                var oFilter = new Filter("empModel>Name", FilterOperator.Contains, value);
+                var oFilter = new Filter("Name", FilterOperator.Contains, value);
                 afilter.push(oFilter);
+                
             }
             this.getView().byId("idtable").getBinding("items").filter(afilter);
            

@@ -63,7 +63,6 @@
           "bundleName": "com.demo.zb70fragment.i18n.i18n"
         }
       },
-      
       "":{
         "dataSource": "mainService",
         "preload": true,
