@@ -23,22 +23,17 @@ sap.ui.define([
              */
             init: function () {
                
-
-
-                var oModel1 = new JSONModel({
+                var oModel = new JSONModel({
                     id:"",
                     order:""
                 });
-
-                this.setModel("oModel1");
+                this.setModel(oModel);
 
                  // call the base component's init function
                 UIComponent.prototype.init.apply(this, arguments);
 
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
-
-
                 // enable routing
                 this.getRouter().initialize();
             }
