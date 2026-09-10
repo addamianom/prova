@@ -22,15 +22,18 @@ sap.ui.define([
              * @override
              */
             init: function () {
-                // call the base component's init function
-                UIComponent.prototype.init.apply(this, arguments);
+               
 
 
-                var oModel = new JSONModel({
+                var oModel1 = new JSONModel({
                     id:"",
                     order:""
                 });
-                this.setModel("oModel");
+
+                this.setModel("oModel1");
+
+                 // call the base component's init function
+                UIComponent.prototype.init.apply(this, arguments);
 
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");

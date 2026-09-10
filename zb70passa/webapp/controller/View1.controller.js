@@ -1,9 +1,9 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "com/demo/zb70passa/model/formatter"
-
+    "com/demo/zb70passa/model/formatter",
+     "sap/ui/model/json/JSONModel"
 ],
-function (Controller, formatter) {
+function (Controller, formatter, JSONModel) {
     "use strict";
 
     return Controller.extend("com.demo.zb70passa.controller.View1", {
@@ -14,9 +14,11 @@ function (Controller, formatter) {
         onPress: function () {
             var id = this.getView().byId("inpid").getValue();
             var order = this.getView().byId("inpOrderno").getValue();
+      
+        
 
-            this.getOwnerComponent().getModel("oModel").setProperty("/id", id);
-            this.getOwnerComponent().getModel("oModel").setProperty("/order", order);
+          //  this.getOwnerComponent().getModel().setProperty("/id", id);
+           // this.getOwnerComponent().getModel().setProperty("/order", order);
 
             this.getOwnerComponent().getRouter().navTo("RouteView2");
 

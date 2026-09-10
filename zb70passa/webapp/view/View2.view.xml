@@ -2,7 +2,8 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:f="sap.ui.layout.form" 
     xmlns="sap.m"
-     displayBlock="true">
+     displayBlock="false">
+     
     <Page id="page2" title="{i18n>title}">
     <f:SimpleForm id="simpleform1"  title="Orders" editable="true" layout="ResponsiveGridLayout" 
     labelSpanL="4" labelSpanM="4" emptySpanL="0" emptySpanM="0" columnsL="3" columnsM="2" >
