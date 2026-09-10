@@ -24,11 +24,28 @@ sap.ui.define([
              */
              init: function () {
                
-                var oModel = new JSONModel({
+                var oModel1 = new JSONModel({
                     id:"",
                     order:""
                 });
-                this.setModel(oModel);
+                this.setModel(oModel1, "testata");
+
+ 
+                // json model
+                var oModel = this.getModel(); // gives odata model
+                var empModel = this.getModel("empModel"); // gives json model 
+              
+                oModel.read("/EmployeeSet", {
+                    success: function(data) {
+                        empModel.setData(data);
+                        },
+                    error:function(error) {
+                        console.log(error);
+                    }
+                }); 
+
+
+
 
                  // call the base component's init function
                 UIComponent.prototype.init.apply(this, arguments);

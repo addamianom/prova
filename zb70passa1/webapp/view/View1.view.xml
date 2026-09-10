@@ -7,6 +7,7 @@
     <Page id="page" title="{i18n>title}">  
      <content>
       <!--  <VBox id="vbox"> -->
+   <VBox id="vbox" >
   <f:SimpleForm id="simpleform"  title="Orders" editable="true" layout="ResponsiveGridLayout" 
     labelSpanL="4" labelSpanM="4" emptySpanL="4" emptySpanM="4" columnsL="3" columnsM="2" >
     <f:content>
@@ -17,6 +18,96 @@
     <Input id="inpOrderno" ></Input>
     </f:content>
     </f:SimpleForm>
+
+
+
+
+  <ScrollContainer id="scroll" horizontal="true" vertical="true">
+     <Table id="idtable" items="{empModel>/results}" mode="SingleSelectMaster" selectionChange="onSelEmp">
+       <headerToolbar>
+        <Toolbar id="idtoolbar">
+            <Title id="idtitle" text="Employees list"></Title>
+            <ToolbarSpacer id="spacer"></ToolbarSpacer>
+            <SearchField id= "search" width="30%" liveChange="onSearch"></SearchField>
+            <Button id="but1" icon="sap-icon://sort-ascending" press="sortAsc"></Button>
+             <Button id="but2" icon="sap-icon://sort-descending" press="sortDesc"></Button>
+        </Toolbar>
+       </headerToolbar>
+       <columns>
+            <Column id="idcolumn" width="15rem">
+            <Text id="idtext1" text="Employee id"></Text>
+            </Column>
+            <Column id="idcolumn1" width="15rem">
+             <Text id="idtext2" text="Employee name"></Text>
+             </Column>
+
+            <Column id="idcolumn3" width="10rem">
+             <Text id="idtext3" text="Designation"></Text>
+             </Column>
+
+             <Column id="idcolumn4" width="15rem">
+              <Text id="idtext4" text="Skill"></Text>
+             </Column>
+            <Column id="idcolumn5" width="15rem">
+               <Text id="idtext5" text="Email"></Text>
+            </Column>
+
+             <Column id="idcolumn6" width="10rem">
+              <Text id="idtext6" text="Phone"></Text>
+              </Column>
+
+               <Column id="idcolumn7" width="10rem">
+              <Text id="idtext7" text="Salary"></Text>
+              </Column>
+           
+            <Column id="idcolumn9" width="10rem">
+              <Text id="idtext9" text="DOBJ" width="10rem"></Text>
+              </Column>
+
+             <Column id="idcolumn10" width="10rem">
+              <Text id="idtext10" text="Rating" width="10rem"></Text>
+              </Column>
+             <Column id="idcolumn11" width="10rem">
+              <Text id="idtext11" text="Status" width="10rem"></Text>
+              </Column>
+
+       </columns>
+       <items>
+        <ColumnListItem id="columnlistitem">
+
+            <cells>
+                <Text id="text1" text="{empModel>Empid}"/>
+                <Text id="text2" text="{path:'empModel>Name', formatter:'.f.formatName'}"/>
+                <Text id="text3" text="{empModel>Desig}"/> 
+  <ObjectStatus id="objectstatus"
+         text="{empModel>Skill}" state="{path:'empModel>Skill',formatter:'.f.colorSkill'}"> </ObjectStatus>
+           <!--    <text id="text4" text="{empModel></text>Skill}"/> -->
+                <Text id="text5" text="{empModel>Email}"/>
+                <Text id="text6" text="{empModel>Phone}"/>
+                 <Text id="text7" text="{empModel>Salary}"/>
+                <Text id="text8" text="{path:'empModel>Doj', formatter:'.f.DateFormat'}"/>
+                  <!--  <Text id="text8" text="{oModel>Doj}"/> -->
+                <Text id="text9" text="{empModel>Rating}"/>
+
+ <ObjectStatus id="objectstatus1"
+  text="{empModel>Status}" state="{path:'empModel>Status',formatter:'.f.colorStatus'}"> </ObjectStatus>
+               <!-- <Text id="text10" text="{oModel>Status}"/> -->
+            </cells>
+        </ColumnListItem>
+
+       </items>
+
+     </Table>
+     </ScrollContainer>
+</VBox>
+
+
+
+
+
+
+
+
     </content>
     <footer>
         <Bar id="idbar">
