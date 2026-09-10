@@ -5,9 +5,11 @@
 sap.ui.define([
         "sap/ui/core/UIComponent",
         "sap/ui/Device",
-        "com/demo/zb70passa1/model/models"
+        "com/demo/zb70passa1/model/models",
+         "sap/ui/model/json/JSONModel"
+
     ],
-    function (UIComponent, Device, models) {
+    function (UIComponent, Device, models, JSONModel) {
         "use strict";
 
         return UIComponent.extend("com.demo.zb70passa1.Component", {

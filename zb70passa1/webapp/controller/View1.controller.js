@@ -1,6 +1,6 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "com/demo/zb70passa/model/formatter",
+    "com/demo/zb70passa1/model/formatter",
     "sap/ui/model/json/JSONModel"
 ],
 function (Controller, formatter, JSONModel) {

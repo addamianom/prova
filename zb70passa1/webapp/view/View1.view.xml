@@ -1,5 +1,4 @@
 <mvc:View controllerName="com.demo.zb70passa1.controller.View1"
-   <mvc:View controllerName="com.demo.zb70passa.controller.View1"
    xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:f="sap.ui.layout.form" 
