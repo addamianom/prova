@@ -1,4 +1,4 @@
-<mvc:View controllerName="com.demo.zb70passa1.controller.View1"
+<mvc:View controllerName="com.demo.zb70passa2.controller.View1"
    xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:f="sap.ui.layout.form" 
@@ -13,12 +13,11 @@
     <f:content>
     <core:Title text="Order Details"  id="idgrp1" ></core:Title>
      <Label id="idid" text="id"></Label>
-    <Input id="inpid" ></Input>
+    <Input id="inpid" value="{testata>/id}"></Input>
     <Label id="labelOrderno" text="Orderno"></Label>
-    <Input id="inpOrderno" ></Input>
+    <Input id="inpOrderno" value="{testata>/order}" ></Input>
     </f:content>
     </f:SimpleForm>
-    
 
   <ScrollContainer id="scroll" horizontal="true" vertical="true">
      <Table id="idtable" items="{empModel>/results}" mode="SingleSelectMaster" selectionChange="onSelEmp">
@@ -110,3 +109,4 @@
     </footer>
     </Page>
 </mvc:View>
+
