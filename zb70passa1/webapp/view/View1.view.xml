@@ -19,9 +19,6 @@
     </f:content>
     </f:SimpleForm>
 
-
-
-
   <ScrollContainer id="scroll" horizontal="true" vertical="true">
      <Table id="idtable" items="{empModel>/results}" mode="SingleSelectMaster" selectionChange="onSelEmp">
        <headerToolbar>
@@ -100,13 +97,6 @@
      </Table>
      </ScrollContainer>
 </VBox>
-
-
-
-
-
-
-
 
     </content>
     <footer>

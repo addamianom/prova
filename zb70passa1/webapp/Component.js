@@ -23,15 +23,14 @@ sap.ui.define([
              * @override
              */
              init: function () {
-               
+               // json model 1 testata
                 var oModel1 = new JSONModel({
                     id:"",
                     order:""
                 });
                 this.setModel(oModel1, "testata");
 
- 
-                // json model
+                // json model2
                 var oModel = this.getModel(); // gives odata model
                 var empModel = this.getModel("empModel"); // gives json model 
               
@@ -43,9 +42,6 @@ sap.ui.define([
                         console.log(error);
                     }
                 }); 
-
-
-
 
                  // call the base component's init function
                 UIComponent.prototype.init.apply(this, arguments);
