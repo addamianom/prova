@@ -1,7 +1,31 @@
 <mvc:View controllerName="com.demo.zb70passa1.controller.View1"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
+   <mvc:View controllerName="com.demo.zb70passa.controller.View1"
+   xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form" 
+    xmlns:core="sap.ui.core" 
+    displayBlock="true">
+    <Page id="page" title="{i18n>title}">  
+     <content>
+      <!--  <VBox id="vbox"> -->
+  <f:SimpleForm id="simpleform"  title="Orders" editable="true" layout="ResponsiveGridLayout" 
+    labelSpanL="4" labelSpanM="4" emptySpanL="4" emptySpanM="4" columnsL="3" columnsM="2" >
+    <f:content>
+    <core:Title text="Order Details"  id="idgrp1" ></core:Title>
+     <Label id="idid" text="id"></Label>
+    <Input id="inpid" ></Input>
+    <Label id="labelOrderno" text="Orderno"></Label>
+    <Input id="inpOrderno" ></Input>
+    </f:content>
+    </f:SimpleForm>
+    </content>
+    <footer>
+        <Bar id="idbar">
+            <contentRight>
+             <Button id="Button" text="Submit" type="Accept" press="onPress"  ></Button>
+           <!--   <Button id="button1" text="Press" type="Accept" press="onpress"></Button> -->
+            </contentRight>
+        </Bar>
+    </footer>
     </Page>
 </mvc:View>
