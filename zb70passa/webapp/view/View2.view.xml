@@ -25,6 +25,6 @@
     <Text id="inpCurrencyUnit1" ></Text>
     </f:content>
     </f:SimpleForm>
-        <content />
+      
     </Page>
 </mvc:View>
