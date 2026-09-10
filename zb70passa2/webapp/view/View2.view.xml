@@ -1,0 +1,95 @@
+<mvc:View controllerName="com.demo.zb70passa2.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.ui.layout.form" 
+    xmlns:core="sap.ui.core" 
+    xmlns="sap.m"
+     displayBlock="false">
+    <Page id="page2" title="{i18n>title}">
+        <VBox id="vbox1">
+    <f:SimpleForm id="simpleform1"  title="Orders" editable="true" layout="ResponsiveGridLayout" 
+    labelSpanL="4" labelSpanM="4" emptySpanL="4" emptySpanM="4" columnsL="3" columnsM="2" >
+    <f:content>
+    <core:Title text="Order Details"  id="idgrp11" ></core:Title>
+     <Label id="idid1" text="id"></Label>
+    <Text id="inpid1" text="{/id}"></Text>
+    <Label id="labelOrderno1" text="Orderno"></Label>
+    <Text id="inporder1"  text="{/order}"></Text>
+    </f:content>
+    </f:SimpleForm>
+
+<ScrollContainer id="scroll1" horizontal="true" vertical="true">
+     <Table id="idtable1" items="{empModel>/results}" mode="SingleSelectMaster" selectionChange="onSelEmp">
+       <headerToolbar>
+        <Toolbar id="idtoolbar1">
+            <Title id="idtitle1" text="View 2 welcome"></Title>
+        </Toolbar>
+       </headerToolbar>
+       <columns>
+            <Column id="idcolumn111" width="15rem">
+            <Text id="idtext111" text="Employee id"></Text>
+            </Column>
+            <Column id="idcolumn121" width="15rem">
+             <Text id="idtext221" text="Employee name"></Text>
+             </Column>
+
+            <Column id="idcolumn31" width="10rem">
+             <Text id="idtext31" text="Designation"></Text>
+             </Column>
+
+             <Column id="idcolumn41" width="15rem">
+              <Text id="idtext41" text="Skill"></Text>
+             </Column>
+            <Column id="idcolumn51" width="15rem">
+               <Text id="idtext51" text="Email"></Text>
+            </Column>
+
+             <Column id="idcolumn61" width="10rem">
+              <Text id="idtext61" text="Phone"></Text>
+              </Column>
+
+               <Column id="idcolumn71" width="10rem">
+              <Text id="idtext71" text="Salary"></Text>
+              </Column>
+           
+            <Column id="idcolumn91" width="10rem">
+              <Text id="idtext91" text="DOBJ" width="10rem"></Text>
+              </Column>
+
+             <Column id="idcolumn101" width="10rem">
+              <Text id="idtext1011" text="Rating" width="10rem"></Text>
+              </Column>
+             <Column id="idcolumn1111" width="10rem">
+              <Text id="idtext110" text="Status" width="10rem"></Text>
+              </Column>
+
+       </columns>
+       <items>
+        <ColumnListItem id="columnlistitem1">
+
+            <cells>
+                <Text id="text11" text="{empModel>Empid}"/>
+                <Text id="text21" text="{path:'empModel>Name', formatter:'.f.formatName'}"/>
+                <Text id="text31" text="{empModel>Desig}"/> 
+  <ObjectStatus id="objectstatus11"
+         text="{empModel>Skill}" state="{path:'empModel>Skill',formatter:'.f.colorSkill'}"> </ObjectStatus>
+           <!--    <text id="text4" text="{empModel></text>Skill}"/> -->
+                <Text id="text51" text="{empModel>Email}"/>
+                <Text id="text61" text="{empModel>Phone}"/>
+                 <Text id="text71" text="{empModel>Salary}"/>
+                <Text id="text81" text="{path:'empModel>Doj', formatter:'.f.DateFormat'}"/>
+                  <!--  <Text id="text8" text="{oModel>Doj}"/> -->
+                <Text id="text91" text="{empModel>Rating}"/>
+
+ <ObjectStatus id="objectstatus110"
+  text="{empModel>Status}" state="{path:'empModel>Status',formatter:'.f.colorStatus'}"> </ObjectStatus>
+               <!-- <Text id="text10" text="{oModel>Status}"/> -->
+            </cells>
+        </ColumnListItem>
+
+       </items>
+
+     </Table>
+     </ScrollContainer>
+</VBox>
+    </Page>
+</mvc:View>
