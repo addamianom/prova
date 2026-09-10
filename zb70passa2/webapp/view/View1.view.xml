@@ -13,9 +13,9 @@
     <f:content>
     <core:Title text="Order Details"  id="idgrp1" ></core:Title>
      <Label id="idid" text="id"></Label>
-    <Input id="inpid" value="{/id}"></Input>
+    <Input id="inpid" value="{testata>/id}"></Input>
     <Label id="labelOrderno" text="Orderno"></Label>
-    <Input id="inpOrderno" value="{/order}" ></Input>
+    <Input id="inpOrderno" value="{testata>/order}" ></Input>
     </f:content>
     </f:SimpleForm>
 

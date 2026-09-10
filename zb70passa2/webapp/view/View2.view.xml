@@ -11,9 +11,9 @@
     <f:content>
     <core:Title text="Order Details"  id="idgrp11" ></core:Title>
      <Label id="idid1" text="id"></Label>
-    <Text id="inpid1" text="{/id}"></Text>
+    <Text id="inpid1" text="{testata>/id}"></Text>
     <Label id="labelOrderno1" text="Orderno"></Label>
-    <Text id="inporder1"  text="{/order}"></Text>
+    <Text id="inporder1"  text="{testata>/order}"></Text>
     </f:content>
     </f:SimpleForm>
 

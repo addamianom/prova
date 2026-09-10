@@ -23,10 +23,7 @@ sap.ui.define([
              */
             init: function () {
                // json model 1 testata
-                var oModel1 = new JSONModel({
-                    id:"",
-                    order:""
-                });
+                var oModel1 = new JSONModel("model/data.json");
                 this.setModel(oModel1, "testata");
 
                 // json model2
