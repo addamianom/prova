@@ -63,7 +63,7 @@
           "bundleName": "com.demo.zb70jsonui.i18n.i18n"
         }
       },
-      "": {
+      "default": {
         "dataSource": "mainService",
         "preload": true,
         "settings": {}

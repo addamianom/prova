@@ -16,6 +16,7 @@
     <Input id="inpid" value="{testata>/id}"></Input>
     <Label id="labelOrderno" text="Orderno"></Label>
     <Input id="inpOrderno" value="{testata>/order}" ></Input>
+
     
      <Label id="lblselect" text="arelation select"/>
      <Select id="select" items="{testata>/aRelations}">
@@ -41,15 +42,20 @@
         </items>
     </MultiComboBox> 
 
-     <Label id="lblRadioButtonGroup" text="RadioButtonGroup"/>
+      <Label id="lblRadioButtonGroup" text="RadioButtonGroup"/>
      <RadioButtonGroup id="RadioButtonGroup" buttons="{testata>/aLanguages}">
         <buttons>
-            <RadioButton  key="{testata>id_language}" text="{testata>language}" />
+            <RadioButton id="radio" key="{testata>id_language}" text="{testata>language}" />
         </buttons>
     </RadioButtonGroup> 
+      
+    <Label id="lblselect1" text="Remote select"/>
+     <Select id="select1" items="{/ZF4_RATINGSet}">
+        <items>
+            <core:Item key="{ID_RATING}" text="{LRATE}" />
+        </items>
+    </Select> 
 
-    <Label id="lblcheckbox" text="Are you married?"/>
-    <CheckBox id="checkbox"></CheckBox>
 
     </f:content>
     </f:SimpleForm>
