@@ -5,9 +5,10 @@
 sap.ui.define([
         "sap/ui/core/UIComponent",
         "sap/ui/Device",
-        "com/demo/zb70jsonui/model/models"
+        "com/demo/zb70jsonui/model/models",
+         "sap/ui/model/json/JSONModel"
     ],
-    function (UIComponent, Device, models) {
+    function (UIComponent, Device, models, JSONModel) {
         "use strict";
 
         return UIComponent.extend("com.demo.zb70jsonui.Component", {
@@ -21,6 +22,11 @@ sap.ui.define([
              * @override
              */
             init: function () {
+                 var oModel = new JSONModel("model/data.json");
+                this.setModel(oModel, "testata");
+
+
+
                 // call the base component's init function
                 UIComponent.prototype.init.apply(this, arguments);
 

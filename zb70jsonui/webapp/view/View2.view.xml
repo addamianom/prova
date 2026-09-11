@@ -1,0 +1,20 @@
+<mvc:View controllerName="com.demo.zb70jsonui.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.ui.layout.form" 
+    xmlns:core="sap.ui.core" 
+    xmlns="sap.m"
+     displayBlock="false">
+    <Page id="page2" title="{i18n>title}">
+    <f:SimpleForm id="simpleform1"  title="Orders" editable="true" layout="ResponsiveGridLayout" 
+    labelSpanL="4" labelSpanM="4" emptySpanL="4" emptySpanM="4" columnsL="3" columnsM="2" >
+    <f:content>
+    <core:Title text="Order Details"  id="idgrp11" ></core:Title>
+     <Label id="idid1" text="id"></Label>
+    <Text id="inpid1" text="{testata>/id}" ></Text>
+    <Label id="labelOrderno1" text="Orderno"></Label>
+    <Text id="inporder1" text="{testata>/order}" ></Text>
+    </f:content>
+    </f:SimpleForm>
+    </Page>
+</mvc:View>
+

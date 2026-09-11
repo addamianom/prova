@@ -1,0 +1,8 @@
+{
+ "id":"",
+"order":"",
+"aRelations":[
+{ "relation" :"Father" },
+{ "relation" :"Mother" },
+{ "relation" :"Sister" } ]
+}
