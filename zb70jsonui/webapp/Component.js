@@ -22,14 +22,18 @@ sap.ui.define([
              * @override
              */
             init: function () {
-                 var oModel = new JSONModel("model/data.json");
-                this.setModel(oModel, "testata");
 
-
-
-                // call the base component's init function
+                 // call the base component's init function
                 UIComponent.prototype.init.apply(this, arguments);
 
+               // var oModel = new JSONModel("model/data.json");
+ 
+             const oModel = new sap.ui.model.json.JSONModel();
+            const sPath = sap.ui.require.toUrl("com/demo/zb70jsonui/model/data.json");
+            oModel.loadData(sPath); 
+  
+                this.setModel(oModel, "testata");
+            
                 // enable routing
                 this.getRouter().initialize();
 

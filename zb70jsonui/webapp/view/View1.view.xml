@@ -1,8 +1,8 @@
 <mvc:View controllerName="com.demo.zb70jsonui.controller.View1"
    xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
-     xmlns:l="sap.ui.layout",
-    xmlns:f="sap.ui.layout.form" 
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
     xmlns:core="sap.ui.core" 
     displayBlock="true">
     <Page id="page" title="{i18n>title}">  
@@ -16,12 +16,40 @@
     <Input id="inpid" value="{testata>/id}"></Input>
     <Label id="labelOrderno" text="Orderno"></Label>
     <Input id="inpOrderno" value="{testata>/order}" ></Input>
+    
+     <Label id="lblselect" text="arelation select"/>
+     <Select id="select" items="{testata>/aRelations}">
+        <items>
+            <core:Item key="{testata>id_relation}"
+                   text="{testata>relation}" />
+        </items>
+    </Select> 
 
-    <!-- <Select id="select" items="{testata>/aRelations}">
-        <Label id="lblselect" text="titolo"> <Label>
-        <core:Item id="item" text="{testata>/relation}"> </core:Item>
-    </Select> -->
+      <Label id="lblcombo" text="combobox"/>
+     <ComboBox id="combobox" items="{testata>/aRelations}">
+        <items>
+            <core:Item key="{testata>id_relation}"
+                   text="{testata>relation}" />
+        </items>
+    </ComboBox> 
  
+     <Label id="lblMultiComboBox" text="Multicombobox"/>
+     <MultiComboBox id="MultiComboBox" items="{testata>/aLanguages}">
+        <items>
+            <core:Item key="{testata>id_language}"
+                   text="{testata>language}" />
+        </items>
+    </MultiComboBox> 
+
+     <Label id="lblRadioButtonGroup" text="RadioButtonGroup"/>
+     <RadioButtonGroup id="RadioButtonGroup" buttons="{testata>/aLanguages}">
+        <buttons>
+            <RadioButton  key="{testata>id_language}" text="{testata>language}" />
+        </buttons>
+    </RadioButtonGroup> 
+
+    <Label id="lblcheckbox" text="Are you married?"/>
+    <CheckBox id="checkbox"></CheckBox>
 
     </f:content>
     </f:SimpleForm>

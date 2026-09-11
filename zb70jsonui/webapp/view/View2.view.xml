@@ -13,6 +13,7 @@
     <Text id="inpid1" text="{testata>/id}" ></Text>
     <Label id="labelOrderno1" text="Orderno"></Label>
     <Text id="inporder1" text="{testata>/order}" ></Text>
+
     </f:content>
     </f:SimpleForm>
     </Page>

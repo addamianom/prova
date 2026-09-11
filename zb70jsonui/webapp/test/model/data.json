@@ -10,15 +10,5 @@
 {  
     "id_relation": "03",
     "relation" : "Sister" }
-],
-"aLanguages":[
-{  "id_language": "01",
-    "language" : "Itlalian" },
-
-{  "id_language": "02",
-    "language" : "English" },
-{  
-    "id_language": "03",
-    "language" : "French" }
 ]
 }
