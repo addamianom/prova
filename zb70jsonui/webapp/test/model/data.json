@@ -1,0 +1,14 @@
+{
+ "id":"1",
+"order":"s",
+"aRelations":[
+{  "id_relation": "01",
+    "relation" : "Father" },
+
+{  "id_relation": "02",
+    "relation" : "Mother" },
+{  
+    "id_relation": "03",
+    "relation" : "Sister" }
+]
+}
