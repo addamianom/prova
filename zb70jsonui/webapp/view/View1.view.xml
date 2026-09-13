@@ -18,7 +18,7 @@
     <Input id="inpOrderno" value="{testata>/order}" ></Input>
 
     
-     <Label id="lblselect" text="arelation select"/>
+     <Label id="lblselect" text="Select"/>
      <Select id="select" items="{testata>/aRelations}" change="onSelRealtion" >
         <items>
             <core:Item key="{testata>id_relation}"
@@ -26,7 +26,7 @@
         </items>
     </Select> 
 
-      <Label id="lblcombo" text="combobox"/>
+      <Label id="lblcombo" text="Combobox"/>
      <ComboBox id="combobox" items="{testata>/aRelations}" selectionChange="onSelRelCB">
         <items>
             <core:Item key="{testata>id_relation}"
@@ -42,13 +42,17 @@
        </items> 
     </MultiComboBox> 
 
-      <Label id="lblRadioButtonGroup" text="RadioButtonGroup"/>
+    <Label id="lblRadioButtonGroup" text="RadioButtonGroup"/>
      <RadioButtonGroup id="RadioButtonGroup" buttons="{testata>/aLanguages}" select="onSelrelb">
         <buttons>
             <RadioButton id="radio" key="{testata>id_language}" text="{testata>language}" />
         </buttons>
     </RadioButtonGroup> 
       
+     <Label id="lblcheckbox" text="Checkbox"/>
+     <CheckBox id="checkbox" select="onSelChb"></CheckBox>
+
+
     <Label id="lblselect1" text="Remote select"/>
      <Select id="select1" items="{/ZF4_RATINGSet}"  change="onSelRealtion">
         <items>

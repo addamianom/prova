@@ -11,8 +11,21 @@
     <core:Title text="Order Details"  id="idgrp11" ></core:Title>
      <Label id="idid1" text="id"></Label>
     <Text id="inpid1" text="{testata>/id}" ></Text>
-    <Label id="labelOrderno1" text="Orderno"></Label>
+    <Label id="labelOrderno1" text="Combobox"></Label>
     <Text id="inporder1" text="{testata>/order}" ></Text>
+
+    <Label id="labelselect" text="Select"></Label>
+    <Text id="inpselect" text="{testata>/select}" ></Text>
+     <Label id="labelconmobox" text="Orderno"></Label>
+    <Text id="inpcombobox" text="{testata>/combobox}" ></Text>
+     <Label id="labelmulticonmobox" text="Multicombobox"></Label>
+    <Text id="inpmulticombobox" text="{testata>/multicombobox}" ></Text>
+    <Label id="labelradio" text="Multicombobox"></Label>
+    <Text id="inpradio" text="{testata>/radio}" ></Text>
+
+
+
+
 
     </f:content>
     </f:SimpleForm>
