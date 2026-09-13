@@ -19,7 +19,7 @@
 
     
      <Label id="lblselect" text="arelation select"/>
-     <Select id="select" items="{testata>/aRelations}">
+     <Select id="select" items="{testata>/aRelations}" change="onSelRealtion" >
         <items>
             <core:Item key="{testata>id_relation}"
                    text="{testata>relation}" />
@@ -27,30 +27,30 @@
     </Select> 
 
       <Label id="lblcombo" text="combobox"/>
-     <ComboBox id="combobox" items="{testata>/aRelations}">
+     <ComboBox id="combobox" items="{testata>/aRelations}" selectionChange="onSelRelCB">
         <items>
             <core:Item key="{testata>id_relation}"
                    text="{testata>relation}" />
         </items>
     </ComboBox> 
  
-     <Label id="lblMultiComboBox" text="Multicombobox"/>
-     <MultiComboBox id="MultiComboBox" items="{testata>/aLanguages}">
-        <items>
+     <Label id="lblMultiComboBox" text="Multicombobox" />
+     <MultiComboBox id="MultiComboBox" items="{testata>/aLanguages}" selectionFinish="onSelFin">
+        <items> 
             <core:Item key="{testata>id_language}"
                    text="{testata>language}" />
-        </items>
+       </items> 
     </MultiComboBox> 
 
       <Label id="lblRadioButtonGroup" text="RadioButtonGroup"/>
-     <RadioButtonGroup id="RadioButtonGroup" buttons="{testata>/aLanguages}">
+     <RadioButtonGroup id="RadioButtonGroup" buttons="{testata>/aLanguages}" select="onSelrelb">
         <buttons>
             <RadioButton id="radio" key="{testata>id_language}" text="{testata>language}" />
         </buttons>
     </RadioButtonGroup> 
       
     <Label id="lblselect1" text="Remote select"/>
-     <Select id="select1" items="{/ZF4_RATINGSet}">
+     <Select id="select1" items="{/ZF4_RATINGSet}"  change="onSelRealtion">
         <items>
             <core:Item key="{ID_RATING}" text="{LRATE}" />
         </items>
