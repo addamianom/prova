@@ -23,10 +23,6 @@
     <Label id="labelradio" text="Multicombobox"></Label>
     <Text id="inpradio" text="{testata>/radio}" ></Text>
 
-
-
-
-
     </f:content>
     </f:SimpleForm>
     </Page>
