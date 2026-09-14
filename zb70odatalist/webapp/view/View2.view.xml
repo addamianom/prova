@@ -15,7 +15,7 @@
     </statuses>
    </ObjectHeader>
 
-<IconTabBar id="tabbar" icon="sap-icon://information">
+<IconTabBar id="tabbar" icon="sap-icon://accept">
     <items> 
         <IconTabFilter id="icontabfilt" icon="sap-icon://action" text="Azione">
             <Text text="Contenuto della scheda Azione" /> 
@@ -27,6 +27,13 @@
     <core:Title text="Employee Details"  id="idgrp11" ></core:Title>
      <Label id="empid" text="Employee id"></Label>
     <Text id="inpid1" text="{Empid}" ></Text>
+
+     <Label id="Name" text="Name"></Label>
+    <Text id="inpname" text="{name}" ></Text>
+
+    <Label id="desig" text="Designation"></Label>
+    <Text id="inpdesig" text="{Desig}" ></Text>
+
     <Label id="labelemail" text="Email"></Label>
     <Text id="inporder1" text="{Email}" ></Text>
 

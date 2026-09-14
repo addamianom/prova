@@ -9,12 +9,15 @@
      <content>
         <ObjectHeader id="header1" title="Employees"  >
         </ObjectHeader>
-     <List id="list" items="{/EmployeeSet}" mode="SingleSelectMaster" selectionChange="onSelEmp" >
 
+      <List id="list" items="{/EmployeeSet}" mode="SingleSelectMaster" selectionChange="onSelEmp" > 
+    
        <ObjectListItem id="objectlist" title="Employee" number="{Empid}" numberUnit="EUR" >
          <attributes>
-            <ObjectAttribute id="obj1" title="Skill" text="{Skill}"></ObjectAttribute>
-             <ObjectAttribute id="obj2" title="Email" text="{Email}"></ObjectAttribute>
+             <ObjectAttribute id="obj1" title="Name" text="{Name}"></ObjectAttribute>
+            <ObjectAttribute id="obj2" title="Skill" text="{Skill}"></ObjectAttribute>
+             <ObjectAttribute id="obj3" title="Email" text="{Email}"></ObjectAttribute>
+             <ObjectAttribute id="obj4" title="Desig" text="{Desig}"></ObjectAttribute>
          </attributes> 
          <firstStatus>
             <ObjectStatus id="status"  text="{Status}" ></ObjectStatus>
