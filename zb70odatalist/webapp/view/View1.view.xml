@@ -7,63 +7,22 @@
     displayBlock="true">
     <Page id="page" title="{i18n>title}">  
      <content>
-      <!--  <VBox id="vbox"> -->
-  <f:SimpleForm id="simpleform"  title="Orders" editable="true" layout="ResponsiveGridLayout" 
-    labelSpanL="4" labelSpanM="4" emptySpanL="4" emptySpanM="4" columnsL="3" columnsM="2" >
-    <f:content>
-    <core:Title text="Order Details"  id="idgrp1" ></core:Title>
-     <Label id="idid" text="id"></Label>
-    <Input id="inpid" value="{testata>/id}"></Input>
-    <Label id="labelOrderno" text="Orderno"></Label>
-    <Input id="inpOrderno" value="{testata>/order}" ></Input>
+        <ObjectHeader id="header1" title="Employees"  >
+        </ObjectHeader>
+     <List id="list" items="{/EmployeeSet}" mode="SingleSelectMaster" selectionChange="onSelEmp" >
 
-    
-     <Label id="lblselect" text="Select"/>
-     <Select id="select" items="{testata>/aRelations}" change="onSelRealtion" >
-        <items>
-            <core:Item key="{testata>id_relation}"
-                   text="{testata>relation}" />
-        </items>
-    </Select> 
-
-      <Label id="lblcombo" text="Combobox"/>
-     <ComboBox id="combobox" items="{testata>/aRelations}" selectionChange="onSelRelCB">
-        <items>
-            <core:Item key="{testata>id_relation}"
-                   text="{testata>relation}" />
-        </items>
-    </ComboBox> 
- 
-     <Label id="lblMultiComboBox" text="Multicombobox" />
-     <MultiComboBox id="MultiComboBox" items="{testata>/aLanguages}" selectionFinish="onSelFin">
-        <items> 
-            <core:Item key="{testata>id_language}"
-                   text="{testata>language}" />
-       </items> 
-    </MultiComboBox> 
-
-    <Label id="lblRadioButtonGroup" text="RadioButtonGroup"/>
-     <RadioButtonGroup id="RadioButtonGroup" buttons="{testata>/aLanguages}" select="onSelrelb">
-        <buttons>
-            <RadioButton id="radio" key="{testata>id_language}" text="{testata>language}" />
-        </buttons>
-    </RadioButtonGroup> 
-      
-     <Label id="lblcheckbox" text="Checkbox"/>
-     <CheckBox id="checkbox" select="onSelChb"></CheckBox>
-
-
-    <Label id="lblselect1" text="Remote select"/>
-     <Select id="select1" items="{/ZF4_RATINGSet}"  change="onSelRealtion">
-        <items>
-            <core:Item key="{ID_RATING}" text="{LRATE}" />
-        </items>
-    </Select> 
-
-
-    </f:content>
-    </f:SimpleForm>
+       <ObjectListItem id="objectlist" title="Employee" number="{Empid}" numberUnit="EUR" >
+         <attributes>
+            <ObjectAttribute id="obj1" title="Skill" text="{Skill}"></ObjectAttribute>
+             <ObjectAttribute id="obj2" title="Email" text="{Email}"></ObjectAttribute>
+         </attributes> 
+         <firstStatus>
+            <ObjectStatus id="status"  text="{Status}" ></ObjectStatus>
+         </firstStatus>
+      </ObjectListItem>
+     </List>
     </content>
+
     <footer>
         <Bar id="idbar">
             <contentRight>

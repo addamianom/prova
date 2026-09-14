@@ -12,8 +12,10 @@ sap.ui.define([
                 this.getOwnerComponent().getRouter().
                     getRoute("RouteView2").attachPatternMatched(this.onPatternMatched, this);
             },
-            onPatternMatched: function () {
-               
+            onPatternMatched: function (oEvent) {
+               var index = oEvent.getParameter("arguments").Index;
+               this.getView().bindElement("/EmployeeSet('" + index + "')" );
+
             },
             onBack: function () {
                 this.getOwnerComponent().getRouter().navTo("RouteView1");

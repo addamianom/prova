@@ -17,69 +17,18 @@ sap.ui.define([
                 // let oRouter = this().getOwnerComponent().getRouter();
                 // oRouter.navTo("RouteView2");
             },
-            onSelRealtion: function (oEvent) {
-                var serrel = oEvent.getParameter("selectedItem").getText();
-                console.log(serrel);
+            onSelEmp: function (oEvent) {
+            /* var employe =  oEvent.getParameter("listItem").getBindingContext().getProperty("Empid");
+                console.log(employe); */
+              var  empid =  oEvent.getParameter("listItem").getBindingContext().getProperty("Empid");
 
-                var oModel = this.getView().getModel("testata");
-                oModel.setProperty("/select", serrel);
-            },
-            onSelRelCB: function (oEvent) {
-                var serrel = oEvent.getParameter("selectedItem").getText();
-                console.log(serrel);
-
-                var oModel = this.getView().getModel("testata");
-                oModel.setProperty("/combobox", serrel);
-            },
-            onSelFin: function (oEvent) {
-                var serrel;
-                var aRelitems = oEvent.getParameter("selectedItems");
-                for (var i = 0; i < aRelitems.length; i++) {
-                  
-                    var sText = aRelitems[i].getText();
-                    console.log(sText);
-
-                    // 2. Unisci i testi. Qui ho aggiunto una virgola e uno spazio ", " per separarli
-                    if (serrel === "") {
-                        serrel = sText;
-                    } else {
-                        serrel = serrel + ", " + sText;
-                    }
-                    var oModel = this.getView().getModel("testata");
-                    if (oModel) {
-
-                        oModel.setProperty("/multicombobox", serrel);
-                    }
-                }
-            },
-
-            onSelrelb: function (oEvent) {
-                var oModel = this.getView().getModel("testata");
-                var index = oEvent.getParameter("selectedIndex");
-                if (index === 0) {
-                    console.log("Italian");
-                    oModel.setProperty("/radio", "Italian");
-                } else {
-                    if (index === 1) {
-                        console.log("English");
-                        oModel.setProperty("/radio", "English");
-                    } else {
-                        if (index === 2) {
-                            console.log("French");
-                            oModel.setProperty("/radio", "French");
-                        }
-                    }
-                }
-
-            },
-            onSelChb: function (oEvent) {
-                var bchecked = oEvent.getParameter("selected");
-                if (bchecked === true) {
-                    console.log("Selected")
-                } else {
-                    console.log("DeSelected")
-                }
+            // nel json model
+               // var sPath =  oEvent.getParameter("listItem").getBindingContext().getPath();
+               // var index = sPath.split("/")[1];
+               //  alert(index);
+               this.getOwnerComponent().getRouter().navTo("RouteView2", { Index: empid });
             }
+            
 
         });
     });
