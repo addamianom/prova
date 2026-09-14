@@ -30,7 +30,7 @@ sap.ui.define([
                // var oModel = new JSONModel("model/data.json");
  
              const oModel = new sap.ui.model.json.JSONModel();
-            const sPath = sap.ui.require.toUrl("com/demo/zb70jsonui/model/data.json");
+            const sPath = sap.ui.require.toUrl("com/demo/zb70odatalist/model/data.json");
             oModel.loadData(sPath); 
   
                 this.setModel(oModel, "testata");
