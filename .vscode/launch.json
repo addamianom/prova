@@ -897,6 +897,7 @@
             "env": {
                 "FIORI_TOOLS_URL_PARAMS": "sap-client=300&sap-ui-xx-viewCache=false"
             }
+
         },
         {
             "name": "Start zb70odatalist",
@@ -974,6 +975,7 @@
             "env": {
                 "FIORI_TOOLS_URL_PARAMS": "sap-client=300&sap-ui-xx-viewCache=false"
             }
+
         }
     ]
 }
