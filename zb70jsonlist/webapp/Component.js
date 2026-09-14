@@ -5,9 +5,11 @@
 sap.ui.define([
         "sap/ui/core/UIComponent",
         "sap/ui/Device",
-        "com/demo/zb70jsonlist/model/models"
+        "com/demo/zb70jsonlist/model/models",
+         "sap/ui/model/json/JSONModel"
+
     ],
-    function (UIComponent, Device, models) {
+    function (UIComponent, Device, models, JSONModel) {
         "use strict";
 
         return UIComponent.extend("com.demo.zb70jsonlist.Component", {
@@ -20,16 +22,41 @@ sap.ui.define([
              * @public
              * @override
              */
-            init: function () {
-                // call the base component's init function
+              init: function () {
+
+                 // call the base component's init function
                 UIComponent.prototype.init.apply(this, arguments);
 
+               // var oModel = new JSONModel("model/data.json");
+ 
+             const oModel = new sap.ui.model.json.JSONModel();
+            const sPath = sap.ui.require.toUrl("com/demo/zb70jsonlist/model/data.json");
+            oModel.loadData(sPath); 
+  
+                this.setModel(oModel, "testata");
+            
                 // enable routing
                 this.getRouter().initialize();
 
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
+            
+            // json model
+                var oModel1 = this.getModel(); // gives odata model
+                var empModel = this.getModel("empModel"); // gives json model 
+              
+                oModel1.read("/EmployeeSet", {
+                    success: function(data) {
+                        empModel.setData(data);
+                        },
+                    error:function(error) {
+                        console.log(error);
+                    }
+                });
+
             }
+
         });
     }
 );
+
