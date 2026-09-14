@@ -29,7 +29,7 @@
     <Text id="inpid1" text="{Empid}" ></Text>
 
      <Label id="Name" text="Name"></Label>
-    <Text id="inpname" text="{name}" ></Text>
+    <Text id="inpname" text="{Name}" ></Text>
 
     <Label id="desig" text="Designation"></Label>
     <Text id="inpdesig" text="{Desig}" ></Text>

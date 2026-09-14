@@ -50,9 +50,7 @@ sap.ui.define([
                         and: false
                     });
 
-
                     afilter.push(oCombinedFilter);
-
                 }
                 this.getView().byId("list").getBinding("items").filter(afilter);
 

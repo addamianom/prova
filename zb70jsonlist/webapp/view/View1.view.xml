@@ -27,7 +27,7 @@
             <ObjectAttribute id="obj1" title="Name" text="{empModel>Name}"></ObjectAttribute>
             <ObjectAttribute id="obj2" title="Skill" text="{empModel>Skill}"></ObjectAttribute>
              <ObjectAttribute id="obj3" title="Email" text="{empModel>Email}"></ObjectAttribute>
-             <ObjectAttribute id="obj4" title="Designation" text="{empModel>Design}"></ObjectAttribute>
+             <ObjectAttribute id="obj4" title="Designation" text="{empModel>Desig}"></ObjectAttribute>
          </attributes> 
          <firstStatus>
             <ObjectStatus id="status"  text="{Status}" ></ObjectStatus>

@@ -101,7 +101,6 @@
             "TargetView2"
           ]
         }
-
       ],
       "targets": {
         "TargetView1": {
@@ -111,7 +110,6 @@
           "viewId": "View1",
           "viewName": "View1"
         } ,
-
           "TargetView2": {
           "viewType": "XML",
           "transition": "slide",
@@ -119,8 +117,6 @@
           "viewId": "View2",
           "viewName": "View2"
         }
-
-
       }
     },
     "rootView": {

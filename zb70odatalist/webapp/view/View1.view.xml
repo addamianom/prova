@@ -12,6 +12,18 @@
 
       <List id="list" items="{/EmployeeSet}" mode="SingleSelectMaster" selectionChange="onSelEmp" > 
     
+
+        <headerToolbar>
+         <Toolbar id="idtoolbar">
+            <Title id="idtitle" text="Employees list"></Title>
+            <ToolbarSpacer id="spacer"></ToolbarSpacer>
+            <SearchField id= "search" width="30%" liveChange="onSearch"></SearchField>
+            <Button id="but1" icon="sap-icon://sort-ascending" press="sortAsc"></Button>
+             <Button id="but2" icon="sap-icon://sort-descending" press="sortDesc"></Button>
+        </Toolbar>
+     </headerToolbar>
+
+
        <ObjectListItem id="objectlist" title="Employee" number="{Empid}" numberUnit="EUR" >
          <attributes>
              <ObjectAttribute id="obj1" title="Name" text="{Name}"></ObjectAttribute>
