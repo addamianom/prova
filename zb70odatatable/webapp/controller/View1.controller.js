@@ -11,7 +11,7 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("com.demo.zb70odatatable.controller.View1", {
-            fr: formatter,
+            f: formatter,
             onInit: function () {
 
             },
@@ -52,18 +52,18 @@ sap.ui.define([
 
                     afilter.push(oCombinedFilter);
                 }
-                this.getView().byId("list").getBinding("items").filter(afilter);
+                this.getView().byId("table").getBinding("items").filter(afilter);
 
             },
             sortAsc: function () {
                 var oSorter = new Sorter("Name", false);
-                this.getView().byId("list").getBinding("items").sort(oSorter);
+                this.getView().byId("table").getBinding("items").sort(oSorter);
 
             },
 
             sortDesc: function () {
                 var oSorter = new Sorter("Name", true);
-                this.getView().byId("list").getBinding("items").sort(oSorter);
+                this.getView().byId("table").getBinding("items").sort(oSorter);
             }
 
 
