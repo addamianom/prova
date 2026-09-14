@@ -26,7 +26,7 @@ sap.ui.define([
                 var oSelectedItem = oEvent.getParameter("listItem") || oEvent.getSource();
 
                 // 2. Recuperi il valore della proprietà "Empid" dal modello
-                var sEmpId = oSelectedItem.getBindingContext().getProperty("Empid");
+                var sEmpId = oSelectedItem.getBindingContext("empModel").getProperty("Empid");
 
                 // 3. Navighi alla seconda view passando l'Empid
                 this.getOwnerComponent().getRouter().navTo("RouteView2", {
@@ -63,14 +63,10 @@ sap.ui.define([
                 this.getView().byId("idlist").getBinding("items").sort(oSorter);
 
             },
-
             sortDesc: function () {
                 var oSorter = new Sorter("Name", true);
                 this.getView().byId("idlist").getBinding("items").sort(oSorter);
             }
-
-
-
 
         });
     });

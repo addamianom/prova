@@ -23,18 +23,19 @@
     <f:SimpleForm id="simpleform1"  title="" editable="true" layout="ResponsiveGridLayout" 
     labelSpanL="4" labelSpanM="4" emptySpanL="4" emptySpanM="4" columnsL="3" columnsM="2" >
     <f:content>
-     
     <core:Title text="Employee Details"  id="idgrp11" ></core:Title>
      <Label id="empid" text="Employee id"></Label>
     <Text id="inpid1" text="{Empid}" ></Text>
+     <Label id="Name" text="Name"></Label>
+     <Text id="inpname" text="{Name}" ></Text>
     <Label id="labelemail" text="Email"></Label>
     <Text id="inporder1" text="{Email}" ></Text>
-
     <Label id="labelskill" text="Skill"></Label>
-    <Text id="inpselect" text="{Skill}" ></Text>
+    <Text id="inpskill" text="{Skill}" ></Text>
+    <Label id="labeldesig" text="Desugnation"></Label>
+    <Text id="inpselect" text="{Desig}" ></Text>
      <Label id="labelstatus" text="Status"></Label>
     <Text id="inpcombobox" text="{Status}" ></Text>
-     
     </f:content>
     </f:SimpleForm>
 

@@ -22,7 +22,7 @@
      </headerToolbar>
 
 
-       <ObjectListItem id="objectlist" title="Employee" number="{Empid}" numberUnit="EUR" >
+       <ObjectListItem id="objectlist" title="Employee" number="{empModel>Empid}" numberUnit="EUR" >
          <attributes>
             <ObjectAttribute id="obj1" title="Name" text="{empModel>Name}"></ObjectAttribute>
             <ObjectAttribute id="obj2" title="Skill" text="{empModel>Skill}"></ObjectAttribute>
