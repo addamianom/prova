@@ -1,5 +1,5 @@
-<mvc:View controllerName="com.demo.zb70odatalist.controller.View1"
-  xmlns:mvc="sap.ui.core.mvc"
+<mvc:View controllerName="com.demo.zb70jsonlist.controller.View1"
+   xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:l="sap.ui.layout"
     xmlns:f="sap.ui.layout.form"
@@ -9,11 +9,9 @@
      <content>
         <ObjectHeader id="header1" title="Employees"  >
         </ObjectHeader>
+     <List id="list"  items="{empModel>/results}" mode="SingleSelectMaster" selectionChange="onSelEmp" >
 
-      <List id="list" items="{/EmployeeSet}" mode="SingleSelectMaster" selectionChange="onSelEmp" > 
-    
-
-        <headerToolbar>
+       <headerToolbar>
          <Toolbar id="idtoolbar">
             <Title id="idtitle" text="Employees list"></Title>
             <ToolbarSpacer id="spacer"></ToolbarSpacer>
@@ -24,12 +22,12 @@
      </headerToolbar>
 
 
-       <ObjectListItem id="objectlist" title="Employee" number="{Empid}" numberUnit="EUR" >
+       <ObjectListItem id="objectlist" title="Employee" number="{empModel>Empid}" numberUnit="EUR" >
          <attributes>
-             <ObjectAttribute id="obj1" title="Name" text="{Name}"></ObjectAttribute>
-            <ObjectAttribute id="obj2" title="Skill" text="{Skill}"></ObjectAttribute>
-             <ObjectAttribute id="obj3" title="Email" text="{Email}"></ObjectAttribute>
-             <ObjectAttribute id="obj4" title="Desig" text="{Desig}"></ObjectAttribute>
+            <ObjectAttribute id="obj1" title="Name" text="{empModel>Name}"></ObjectAttribute>
+            <ObjectAttribute id="obj2" title="Skill" text="{empModel>Skill}"></ObjectAttribute>
+             <ObjectAttribute id="obj3" title="Email" text="{empModel>Email}"></ObjectAttribute>
+             <ObjectAttribute id="obj4" title="Designation" text="{empModel>Desig}"></ObjectAttribute>
          </attributes> 
          <firstStatus>
             <ObjectStatus id="status"  text="{Status}" ></ObjectStatus>
@@ -48,5 +46,3 @@
     </footer>
     </Page>
 </mvc:View>
-
-

@@ -1,7 +1,7 @@
 {
   "_version": "1.17.0",
   "sap.app": {
-    "id": "com.demo.zb70odatalist",
+    "id": "com.demo.zb70jsonlist",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
       "version": "1.31.1",
-      "toolsId": "da317c07-5aff-412e-8a93-1b15734caa5d"
+      "toolsId": "bd37d07a-94fd-4df3-9bf3-09f8f7ee32c8"
     },
     "dataSources": {
       "mainService": {
@@ -60,14 +60,18 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "com.demo.zb70odatalist.i18n.i18n"
+          "bundleName": "com.demo.zb70jsonlist.i18n.i18n"
         }
       },
       "": {
         "dataSource": "mainService",
         "preload": true,
         "settings": {}
-      }
+      },
+       "empModel":{
+        "type": "sap.ui.model.json.JSONModel"
+       }
+
     },
     "resources": {
       "css": [
@@ -81,7 +85,7 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "com.demo.zb70odatalist.view",
+        "viewPath": "com.demo.zb70jsonlist.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
@@ -101,6 +105,7 @@
             "TargetView2"
           ]
         }
+
       ],
       "targets": {
         "TargetView1": {
@@ -109,21 +114,18 @@
           "clearControlAggregation": false,
           "viewId": "View1",
           "viewName": "View1"
-        } ,
-
-          "TargetView2": {
+        },
+         "TargetView2": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
           "viewId": "View2",
           "viewName": "View2"
         }
-
-
       }
     },
     "rootView": {
-      "viewName": "com.demo.zb70odatalist.view.App",
+      "viewName": "com.demo.zb70jsonlist.view.App",
       "type": "XML",
       "async": true,
       "id": "App"
