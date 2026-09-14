@@ -1,0 +1,50 @@
+<mvc:View controllerName="com.demo.zb70odatatable.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core" 
+    displayBlock="true">
+    <Page id="page" title="{i18n>title}">  
+     <content>
+        <ObjectHeader id="header1" title="Employees"  >
+        </ObjectHeader>
+
+      <List id="list" items="{/EmployeeSet}" mode="SingleSelectMaster" selectionChange="onSelEmp" > 
+    
+
+        <headerToolbar>
+         <Toolbar id="idtoolbar">
+            <Title id="idtitle" text="Employees list"></Title>
+            <ToolbarSpacer id="spacer"></ToolbarSpacer>
+            <SearchField id= "search" width="30%" liveChange="onSearch"></SearchField>
+            <Button id="but1" icon="sap-icon://sort-ascending" press="sortAsc"></Button>
+             <Button id="but2" icon="sap-icon://sort-descending" press="sortDesc"></Button>
+        </Toolbar>
+     </headerToolbar>
+
+
+       <ObjectListItem id="objectlist" title="Employee" number="{Empid}" numberUnit="EUR" >
+         <attributes>
+             <ObjectAttribute id="obj1" title="Name" text="{Name}"></ObjectAttribute>
+            <ObjectAttribute id="obj2" title="Skill" text="{Skill}"></ObjectAttribute>
+             <ObjectAttribute id="obj3" title="Email" text="{Email}"></ObjectAttribute>
+             <ObjectAttribute id="obj4" title="Desig" text="{Desig}"></ObjectAttribute>
+         </attributes> 
+         <firstStatus>
+            <ObjectStatus id="status"  text="{Status}" ></ObjectStatus>
+         </firstStatus>
+      </ObjectListItem>
+     </List>
+    </content>
+
+    <footer>
+        <Bar id="idbar">
+            <contentRight>
+             <Button id="Button" text="Submit" type="Accept" press="onPress"  ></Button>
+           <!--   <Button id="button1" text="Press" type="Accept" press="onpress"></Button> -->
+            </contentRight>
+        </Bar>
+    </footer>
+    </Page>
+</mvc:View>
