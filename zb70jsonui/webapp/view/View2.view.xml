@@ -21,6 +21,7 @@
      <Label id="labelmulticonmobox" text="Multicombobox"></Label>
     <Text id="inpmulticombobox" text="{testata>/multicombobox}" ></Text>
     <Label id="labelradio" text="Radiobutton"></Label>
+
     <Text id="inpradio" text="{testata>/radio}" ></Text>
 
     </f:content>
