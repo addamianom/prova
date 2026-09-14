@@ -7,7 +7,7 @@ sap.ui.define([
     "sap/ui/model/Sorter"
 
 ],
-    function (Controller, formatter, JSONModel, Filter, FilterOperator, Sorte) {
+    function (Controller, formatter, JSONModel, Filter, FilterOperator, Sorter) {
         "use strict";
 
         return Controller.extend("com.demo.zb70jsonlist.controller.View1", {
@@ -55,17 +55,17 @@ sap.ui.define([
                     afilter.push(oCombinedFilter);
 
                 }
-                this.getView().byId("idlist").getBinding("items").filter(afilter);
+                this.getView().byId("list").getBinding("items","empModel").filter(afilter);
 
             },
             sortAsc: function () {
                 var oSorter = new Sorter("Name", false);
-                this.getView().byId("idlist").getBinding("items").sort(oSorter);
+                this.getView().byId("list").getBinding("items", "empModel").sort(oSorter);
 
             },
             sortDesc: function () {
                 var oSorter = new Sorter("Name", true);
-                this.getView().byId("idlist").getBinding("items").sort(oSorter);
+                this.getView().byId("list").getBinding("items", "empModel").sort(oSorter);
             }
 
         });
