@@ -20,7 +20,6 @@ xmlns:mvc="sap.ui.core.mvc"
         </Toolbar>
      </headerToolbar>
 
-
        <columns>
             <Column id="idcolumn">
             <Text id="idtext1" text="Employee id"></Text>
