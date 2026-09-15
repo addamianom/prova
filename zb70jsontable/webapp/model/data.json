@@ -1,0 +1,30 @@
+{
+ "id":"1",
+"order":"s",
+"select":"",
+"combobox":"Father",
+"multicombobox":"",
+"radio":"",
+"aRelations":[
+{  "id_relation": "01",
+    "relation" : "Father" },
+
+{  "id_relation": "02",
+    "relation" : "Mother" },
+{  
+    "id_relation": "03",
+    "relation" : "Sister" }
+],
+"aLanguages":[
+{  "id_language": "01",
+    "language" : "Itlalian" },
+
+{  "id_language": "02",
+    "language" : "English" },
+{  
+    "id_language": "03",
+    "language" : "French" }
+]
+}
+
+
