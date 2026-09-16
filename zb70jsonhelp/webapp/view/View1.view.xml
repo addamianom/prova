@@ -1,4 +1,4 @@
-<mvc:View controllerName="com.demo.zb70jsonhelp.controller.View1"
+<mvc:View xmlns:uxap="sap.uxap" controllerName="com.demo.zb70jsonhelp.controller.View1"
   xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:l="sap.ui.layout"
@@ -7,7 +7,18 @@
     displayBlock="true">
     <Page id="page" title="{i18n>title}">  
      <content>
-      <Table id="table" items="{empModel>/results}"
+<f:SimpleForm id="simpleform"  title="Orders" editable="true" layout="ResponsiveGridLayout" 
+    labelSpanL="1" labelSpanM="1" emptySpanL="8" emptySpanM="8" columnsL="3" columnsM="2" >
+    <f:content>
+    <core:Title text="Order Details"  id="idgrp1" ></core:Title>
+    <Label id="labelOrderno" text="Orderno"></Label>
+    <Input id="inpOrderno" class="sapUiLargeMarginBottom" 
+    showValueHelp="true" valueHelpRequest="onValueHelpPress"></Input>
+    
+</f:content>
+    </f:SimpleForm>
+
+      <Table id="table" items="{empModel>/results} "
       mode="SingleSelectMaster" selectionChange="onSelEmp">
 
       <headerToolbar>
