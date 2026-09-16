@@ -108,12 +108,12 @@ sap.ui.define([
             sortDeschelp: function () {
                 var oSorter = new Sorter("Name", true);
                 this.getView().byId("table1").getBinding("items", "empModel").sort(oSorter);
-            },
+            }
 
-           onClose: function () {
+           /* onClose: function () {
               this._dialog.close();
            }
-        /*    onSelEmpfromHelp: function (oEvent) {
+           onSelEmpfromHelp: function (oEvent) {
             
                 // 2. Recuperi il valore della proprietà "Empid" dal modello
 var sEmpId = oEvent.getParameter("listItem").getBindingContext("empModel").getProperty("Empid");

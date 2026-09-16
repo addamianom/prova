@@ -15,7 +15,7 @@
     </statuses>
    </ObjectHeader>
 
-<IconTabBar id="tabbar" icon="sap-icon://information">
+<IconTabBar id="tabbar" icon="sap-icon://action">
     <items> 
         <IconTabFilter id="icontabfilt" icon="sap-icon://action" text="Azione">
             <Text id="tex1" text="Contenuto della scheda Azione" /> 

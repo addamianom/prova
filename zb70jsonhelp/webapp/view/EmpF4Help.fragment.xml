@@ -10,7 +10,7 @@
 
 
 <Table id="table1" items="{empModel>/results}"
-      mode="SingleSelectMaster" selectionChange="onSelEmpfromHelp">
+      mode="SingleSelectMaster" selectionChange="onSelEmpHelp">
 
       <headerToolbar>
          <Toolbar id="idtoolbar1">
