@@ -5,7 +5,6 @@ sap.ui.define([
     "sap/ui/model/Filter",
     "sap/ui/model/FilterOperator",
     "sap/ui/model/Sorter"
-
 ],
     function (Controller, formatter, JSONModel, Filter, FilterOperator, Sorter) {
         "use strict";
@@ -108,21 +107,21 @@ sap.ui.define([
             sortDeschelp: function () {
                 var oSorter = new Sorter("Name", true);
                 this.getView().byId("table1").getBinding("items", "empModel").sort(oSorter);
-            }
+            },
 
-           /* onClose: function () {
+           onClose: function () {
               this._dialog.close();
-           }
-           onSelEmpfromHelp: function (oEvent) {
+           },
+           onSelEmpHelp: function (oEvent) {
             
                 // 2. Recuperi il valore della proprietà "Empid" dal modello
-var sEmpId = oEvent.getParameter("listItem").getBindingContext("empModel").getProperty("Empid");
+           var sEmpId = oEvent.getParameter("listItem").getBindingContext("empModel").getProperty("Empid");
                
               this.getView().byId("inpOrderno").setValue(sEmpId);
               if (this._dialog) {
                  this._dialog.close();
                 } 
-           } */
+           } 
 
         });
     });

@@ -18,7 +18,7 @@
 </f:content>
     </f:SimpleForm>
 
-      <Table id="table" items="{empModel>/results} "
+    <Table id="table" items="{empModel>/results}"
       mode="SingleSelectMaster" selectionChange="onSelEmp">
 
       <headerToolbar>
@@ -93,11 +93,8 @@
             </cells>
         </ColumnListItem>
        </items>
-
      </Table>
-
     </content>
-
     <footer>
         <Bar id="idbar">
             <contentRight>
