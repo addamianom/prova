@@ -1,0 +1,95 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    
+    <Dialog 
+        id="myDialog" 
+        title="Titolo del Dialog"
+        type="Message"
+        state="None">
+
+
+<Table id="table1" items="{empModel>/results}"
+      mode="SingleSelectMaster" selectionChange="onSelEmpHelp">
+
+      <headerToolbar>
+         <Toolbar id="idtoolbar1">
+            <Title id="idtitle1" text="Employees list"></Title>
+            <ToolbarSpacer id="spacer1"></ToolbarSpacer>
+            <SearchField id= "search1" width="30%" liveChange="onSearchhelp"></SearchField>
+            <Button id="but11" icon="sap-icon://sort-ascending" press="sortAschelp"></Button>
+             <Button id="but21" icon="sap-icon://sort-descending" press="sortDeschelp"></Button>
+        </Toolbar>
+     </headerToolbar>
+
+       <columns>
+            <Column id="idcolumn2">
+            <Text id="idtext12" text="Employee id"></Text>
+            </Column>
+
+            <Column id="idcolumn121">
+             <Text id="idtext221" text="Employee name"></Text>
+             </Column>
+
+            <Column id="idcolumn31">
+             <Text id="idtext31" text="Designation"></Text>
+             </Column>
+
+             <Column id="idcolumn41">
+              <Text id="idtext41" text="Skill"></Text>
+             </Column>
+            <Column id="idcolumn51">
+               <Text id="idtext51" text="Email"></Text>
+            </Column>
+
+             <Column id="idcolumn61">
+              <Text id="idtext61" text="Phone"></Text>
+              </Column>
+
+               <Column id="idcolumn71">
+              <Text id="idtext71" text="Salary"></Text>
+              </Column>
+           
+            <Column id="idcolumn91">
+              <Text id="idtext91" text="DOBJ"></Text>
+              </Column>
+
+             <Column id="idcolumn20">
+              <Text id="idtext20" text="Rating"></Text>
+              </Column>
+             <Column id="idcolumn21">
+              <Text id="idtext21" text="Status"></Text>
+              </Column>
+
+       </columns>
+       <items>
+        <ColumnListItem id="columnlistitem1">
+            <cells>
+                <Text id="text11" text="{empModel>Empid}"/>
+                <Text id="text21" text="{path:'Name', formatter:'.f.formatName'}"/>
+                <Text id="text31" text="{empModel>Desig}"/> 
+  <ObjectStatus id="objectstatus4"
+         text="{empModel>Ski2}" state="{path:'Skill',formatter:'.f.colorSkill'}"> </ObjectStatus>
+           <!--    <text id="text4" text="{empModel></text>Skill}"/> -->
+                <Text id="text51" text="{empModel>Email}"/>
+                <Text id="text61" text="{PempModel>hone}"/>
+                 <Text id="text71" text="{empModel>Salary}"/>
+                <Text id="text81" text="{path:'empModel>Doj', formatter:'.f.DateFormat'}"/>
+                  <!--  <Text id="text8" text="{oModel>Doj}"/> -->
+                <Text id="text91" text="{empModel>Rating}"/>
+
+ <ObjectStatus id="objectstatus11"
+  text="{empModel>Status}" state="{path:'Status',formatter:'.f.colorStatus'}"> </ObjectStatus>
+               <!-- <Text id="text10" text="{oModel>Status}"/> -->
+            </cells>
+        </ColumnListItem>
+       </items>
+
+     </Table>
+      <buttons>
+            <Button id="Button1" text="Close" type="Reject" press="onClose" />
+            <!-- <Button id="button2" text="Press" type="Accept" press="onpress" /> -->
+        </buttons>
+
+          </Dialog>
+</core:FragmentDefinition>

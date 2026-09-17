@@ -1,9 +1,9 @@
-<mvc:View controllerName="com.demo.zb70odatalist.controller.View2"
+<mvc:View controllerName="com.demo.zb70jsonhelp.controller.View2"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:f="sap.ui.layout.form" 
     xmlns:core="sap.ui.core" 
     xmlns="sap.m"
-     displayBlock="false">
+    displayBlock="false">
     <Page id="page2" title="{i18n>title}">
  <ObjectHeader id="header" title="Employee" number="{Empid}" numberUnit="EUR" >
     <attributes>
@@ -15,33 +15,27 @@
     </statuses>
    </ObjectHeader>
 
-<IconTabBar id="tabbar" icon="sap-icon://accept">
+<IconTabBar id="tabbar" icon="sap-icon://action">
     <items> 
         <IconTabFilter id="icontabfilt" icon="sap-icon://action" text="Azione">
-            <Text text="Contenuto della scheda Azione" /> 
+            <Text id="tex1" text="Contenuto della scheda Azione" /> 
 
     <f:SimpleForm id="simpleform1"  title="" editable="true" layout="ResponsiveGridLayout" 
     labelSpanL="4" labelSpanM="4" emptySpanL="4" emptySpanM="4" columnsL="3" columnsM="2" >
     <f:content>
-     
     <core:Title text="Employee Details"  id="idgrp11" ></core:Title>
      <Label id="empid" text="Employee id"></Label>
     <Text id="inpid1" text="{Empid}" ></Text>
-
      <Label id="Name" text="Name"></Label>
-    <Text id="inpname" text="{Name}" ></Text>
-
-    <Label id="desig" text="Designation"></Label>
-    <Text id="inpdesig" text="{Desig}" ></Text>
-
+     <Text id="inpname" text="{Name}" ></Text>
     <Label id="labelemail" text="Email"></Label>
     <Text id="inporder1" text="{Email}" ></Text>
-
     <Label id="labelskill" text="Skill"></Label>
-    <Text id="inpselect" text="{Skill}" ></Text>
+    <Text id="inpskill" text="{Skill}" ></Text>
+    <Label id="labeldesig" text="Desugnation"></Label>
+    <Text id="inpselect" text="{Desig}" ></Text>
      <Label id="labelstatus" text="Status"></Label>
     <Text id="inpcombobox" text="{Status}" ></Text>
-     
     </f:content>
     </f:SimpleForm>
 
