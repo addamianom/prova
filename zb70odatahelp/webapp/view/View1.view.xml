@@ -7,7 +7,18 @@
     displayBlock="true">
     <Page id="page1" title="{i18n>title}">  
      <content>
-         <ScrollContainer id="scroll" horizontal="true" vertical="true">
+
+    <f:SimpleForm id="simpleform"  title="Orders" editable="true" layout="ResponsiveGridLayout" 
+    labelSpanL="1" labelSpanM="1" emptySpanL="8" emptySpanM="8" columnsL="3" columnsM="2" >
+    <f:content>
+    <core:Title text="Order Details"  id="idgrp1" ></core:Title>
+    <Label id="labelOrderno" text="Orderno"></Label>
+    <Input id="inpOrderno" class="sapUiLargeMarginBottom" 
+    showValueHelp="true" valueHelpRequest="onValueHelpPress"></Input>
+    </f:content>
+    </f:SimpleForm>
+
+  <ScrollContainer id="scroll" horizontal="true" vertical="true">
      <Table id="table" items="{/EmployeeSet}" mode="SingleSelectMaster" selectionChange="onSelEmp">
        <headerToolbar>
         <Toolbar id="idtoolbar">

@@ -18,7 +18,7 @@
 <IconTabBar id="tabbar" >
     <items> 
         <IconTabFilter id="icontabfilt" icon="sap-icon://action" text="Azione">
-            <Text text="Contenuto della scheda Azione" /> 
+            <Text id ="cont1" text="Contenuto della scheda Azione" /> 
 
     <f:SimpleForm id="simpleform1"  title="" editable="true" layout="ResponsiveGridLayout" 
     labelSpanL="4" labelSpanM="4" emptySpanL="4" emptySpanM="4" columnsL="3" columnsM="2" >
@@ -44,10 +44,8 @@
      
     </f:content>
     </f:SimpleForm>
-
    </IconTabFilter>
     </items>
 </IconTabBar>
-
     </Page>
 </mvc:View>

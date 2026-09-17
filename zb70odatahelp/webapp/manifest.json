@@ -67,14 +67,8 @@
         "dataSource": "mainService",
         "preload": true,
         "settings": {}
-      },
-          {
-          "name": "RouteView2",
-          "pattern": "View2/{Index}",
-          "target": [
-            "TargetView2"
-          ]
-        }
+      }
+         
     },
     "resources": {
       "css": [
@@ -116,8 +110,7 @@
           "clearControlAggregation": false,
           "viewId": "View1",
           "viewName": "View1"
-        },
-        
+        }, 
          "TargetView2": {
           "viewType": "XML",
           "transition": "slide",
@@ -125,7 +118,6 @@
           "viewId": "View2",
           "viewName": "View2"
         }
-
       }
     },
     "rootView": {
