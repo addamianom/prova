@@ -15,7 +15,7 @@
     </statuses>
    </ObjectHeader>
 
-<IconTabBar id="tabbar" icon="sap-icon://accept">
+<IconTabBar id="tabbar" >
     <items> 
         <IconTabFilter id="icontabfilt" icon="sap-icon://action" text="Azione">
             <Text text="Contenuto della scheda Azione" /> 
@@ -41,11 +41,13 @@
     <Text id="inpselect" text="{Skill}" ></Text>
      <Label id="labelstatus" text="Status"></Label>
     <Text id="inpcombobox" text="{Status}" ></Text>
+     
     </f:content>
     </f:SimpleForm>
 
    </IconTabFilter>
     </items>
 </IconTabBar>
+
     </Page>
 </mvc:View>

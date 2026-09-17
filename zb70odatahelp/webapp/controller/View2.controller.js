@@ -7,7 +7,7 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("com.demo.zb70odatahelp.controller.View2", {
-           fr:formatter,
+           f:formatter,
             onInit: function () {
                 this.getOwnerComponent().getRouter().
                     getRoute("RouteView2").attachPatternMatched(this.onPatternMatched, this);
